@@ -1,0 +1,33 @@
+.title {
+    padding: 24px 0;
+    h2 {
+        font-family: 'Evolventa',sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 8px;
+        @media (min-width:601px) {
+            font-size: 36px;
+            line-height: 48px;
+            margin-bottom: 15px;
+        }
+    }
+    p {
+        font-family: 'NotoSansJP',sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 17px;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        color: #000000;
+        @media (min-width:601px) {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+}

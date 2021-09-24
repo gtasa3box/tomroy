@@ -1,0 +1,46 @@
+.insta {
+    &__content {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 55px;
+        @media (min-width:601px) {
+            margin-top: 0;
+        }
+    }
+    &__title {
+
+    }
+    &__slider {
+        width: 100%;
+        @media (min-width:1000px) {
+            width: 60%;
+            position: relative;
+            left: 20px;
+            margin-top: 53px;
+        }
+        
+    }
+    &__card {
+        width: 100%;
+        margin-top: 50px;
+        @media (min-width:1000px) {
+            width: 40%;
+            margin-top: 0;
+        }
+    }
+    &__img {
+        display: block;
+        height: 251px;
+        width: 287px;
+        background-image: url(../img/footer/img-card.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 auto;
+        @media (min-width:601px) {
+            height: 390px;
+            width: 445px;
+        }
+    }
+}
