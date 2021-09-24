@@ -1,0 +1,27 @@
+.basket {
+    display: flex;
+    &__img {
+        display: block;
+        background-image: url(../img/basket.svg);
+        height: 40px;
+        width: 40px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 13px;
+    }
+    &__text {
+
+    }
+    &__name {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 17px;
+    }
+    &__sum {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 23px;
+        letter-spacing: 0.04em;
+    }
+}

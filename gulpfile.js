@@ -97,7 +97,8 @@ const images = () => {
 		'./src/img/**.jpg',
 		'./src/img/**.png',
 		'./src/img/**.jpeg',
-		'./src/img/*.svg',
+		'./src/img/**.svg',
+    './src/img/**/*.svg',
 		'./src/img/**/*.jpg',
 		'./src/img/**/*.png',
 		'./src/img/**/*.jpeg'
@@ -129,7 +130,7 @@ const watchFiles = () => {
   watch('./src/*.html', htmlInclude);
   watch('./src/resources/**', resources);
   watch('./src/img/*.{jpg,jpeg,png,svg}', images);
-	watch('./src/img/**/*.{jpg,jpeg,png}', images);
+	watch('./src/img/**/*.{jpg,jpeg,png,svg}', images);
   watch('./src/img/svg/**.svg', svgSprites);
 }
 

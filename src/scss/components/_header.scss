@@ -1,1 +1,71 @@
-//
+.header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'NotoSansJP',sans-serif;
+    font-style: normal;
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        padding-top: 15px;
+    }
+    &__btn {
+        display: none;
+    }
+    &__contact {
+        display: none;
+    }
+    &__user {
+        display: none;
+    }
+    &__nav {
+        width: 100%;
+    }
+    &__search {
+        order: 1;
+        width: 100%;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/lupa.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 31px;
+            height: 31px;
+            right: 0;
+            bottom: 0;
+        }
+        input {
+            margin-top: 29px;
+            width: 90%;
+            border: none;
+            border-bottom: 2px solid #000000;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 17px;
+            letter-spacing: 0.04em;
+            outline: none;
+            color: rgba(0, 0, 0, 0.7);
+        }
+    }
+    &__burger {
+        position: absolute;
+        right: 15px;
+        top: 27px;
+        height: 23px;
+        width: 30px;
+    }
+    &__logo {
+        width: 103px;
+        height: 53px;
+    }
+    &__basket {
+        margin-right: 68px;
+    }
+}
