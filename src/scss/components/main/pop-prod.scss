@@ -1,5 +1,8 @@
 .pop-prod {
     padding: 36px 0 40px;
+    @media (min-width:601px) {
+        padding: 103px 0 151px;
+    }
     &__slider {
         width: 100%;
     }
@@ -14,5 +17,15 @@
         letter-spacing: 0.03em;
         color: #FFFFFF;
         margin-top: 67px;
+        @media (min-width:601px) {
+            width: 266px;
+            height: 53px;
+            font-size: 20px;
+            line-height: 29px;
+            margin: 92px 0 0;
+            position: relative;
+            left:50%;
+            transform: translateX(-50%);
+        }
     }
 }

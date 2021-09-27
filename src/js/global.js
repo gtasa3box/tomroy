@@ -68,18 +68,35 @@ $('.slider-pop-prod').slick({
   arrows: true,
   infinite: true,
   speed: 300,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  dots: false,
+  slidesToShow: 4,
+  slidesToScroll: 2,
+  dots: true,
   responsive: [
     {
-      breakpoint: 1300,
+      breakpoint: 1550,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        arrows: false,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 1180,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true,
+        slidesToScroll: 2,
         arrows: false,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false
       }
     },
     {
