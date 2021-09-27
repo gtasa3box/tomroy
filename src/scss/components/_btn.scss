@@ -14,7 +14,7 @@
     &:hover {
         background-color: #405C5C;
     }
-    &-white {
+    &_white {
         background-color: white;
         color: black;
         font-weight: 500;
@@ -25,5 +25,15 @@
             background-color: black;
             color: white;
         }
+    }
+    &_more {
+        cursor: pointer;
+        display: block;
+        background-image: url(../img/intro/arrow.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 23px;
+        height: 12px;
     }
 }

@@ -1,0 +1,101 @@
+.intro {
+    position: relative;
+    padding-bottom: 535px;
+    @media (min-width:601px) {
+        padding-bottom: 0;
+    }
+    @media (min-width:601px) and (max-width: 1000px) {
+        padding-bottom: 535px;
+    }
+    .wrapper {
+    }
+    &__content {
+        padding: 46px 0;
+        width: 100%;
+        position: relative;
+        @media (min-width:601px) {
+            width: 50%;
+            padding: 181px 0;
+        }
+        @media (min-width:601px) and (max-width: 1000px) {
+            width: 100%;
+            padding: 80px;
+        }
+    }
+    &__title {
+        font-family: 'Evolventa',sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 53px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #1F1F1F;
+        @media (min-width:601px) {
+            font-size: 72px;
+            line-height: 96px;
+        }
+    }
+    &__text {
+        font-family: 'NotoSansJP',sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 170%;
+        letter-spacing: 0.025em;
+        color: rgba(0, 0, 0, 0.7);
+        margin: 15px 0 30px;
+        @media (min-width:601px) {
+            max-width: 635px;
+            font-size: 16px;
+            margin: 30px 0 53px;
+        }
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        a {
+            &:first-child {
+                margin-right: 35px;
+                width: 186.15px;
+                height: 38.23px;
+                font-family: 'NotoSansJP',sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 22px;
+                letter-spacing: 0.025em;
+                @media (min-width:601px) {
+                    width: 224px;
+                    height: 46px;
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+
+    &__slider {
+        width: 100%;
+        background-color: #F2F2F2;
+        border-radius: 0px 0px 0px 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding-bottom: 35px;
+        @media (min-width:601px) {
+            width: 50%;
+            left: initial;
+            right: 0;
+            bottom: initial;
+            top: 0;
+            height: 100%;
+        }
+        @media (min-width:601px) and (max-width: 1000px)  {
+            width: 100%;
+            top: initial;
+            bottom: 0;
+            height: auto;
+        }
+    }
+}

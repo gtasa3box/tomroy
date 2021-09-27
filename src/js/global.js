@@ -39,3 +39,25 @@ $('.slider-inst').slick({
       }
     ]
 });
+
+
+//intro-slider 
+$('.slider-intro').slick({
+  arrows: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true
+      }
+    }
+  ]
+});
