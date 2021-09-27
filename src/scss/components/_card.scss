@@ -1,0 +1,118 @@
+.card {
+    &__wrapper {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 18px 20px;
+      width: 163px;
+      height: 254px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: space-between;
+      margin: 0 auto;
+      @media (min-width:601px) {
+        width: 375px;
+        height: 546px;
+        padding: 42px 46px;
+      }
+    }
+    &__discount {
+  
+    }
+    &__img {
+      display: block;
+      background-size: cover;
+      background-position: center;
+      width: 118.23px;
+      height: 118.23px;
+      @media (min-width:601px) {
+        width: 272px;
+        height: 272px;
+      }
+    }
+    &__title {
+      font-family: 'Evolventa',sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 8px;
+      line-height: 150%;
+      letter-spacing: 0.025em;
+      color: #000000;
+      margin: 13px 0 8px;
+      @media (min-width:601px) {
+        font-size: 14px;
+        margin: 32px 0 42px;
+        width: 60%;
+      }
+    }
+    &__price {
+      font-family: 'Noto Sans JP',sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 8px;
+      line-height: 164.8%;
+      letter-spacing: 0.025em;
+      color: #000000;
+      width: 50%;
+      @media (min-width:601px) {
+        width: 40%;
+        font-size: 16px;
+        margin: 32px 0 42px;
+      }
+    }
+    &__basket {
+      font-family: 'Noto Sans JP',sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 8px;
+      line-height: 12px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-decoration-line: underline;
+      color: #000000;
+      position: relative;
+      width: 50%;
+      @media (min-width:601px) {
+        font-size: 16px;
+        line-height: 23px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/pop-prod/arrow.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 16.28px;
+        height: 16.28px;
+        left: -10px;
+        top: 40%;
+        transform: translateY(-50%);
+        @media (min-width:601px) {
+          left: 6px;
+          top: 50%;
+        }
+      }
+    }
+    &__btn {
+      width: 100%;
+      width: 119px;
+      height: 21px;
+      font-family: 'Noto Sans JP',sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 8px;
+      line-height: 12px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: #000000;
+      @media (min-width:601px) {
+        width: 135px;
+        height: 41px;
+        font-size: 16px;
+        line-height: 23px;
+      }
+    }
+}
