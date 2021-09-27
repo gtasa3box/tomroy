@@ -1,10 +1,13 @@
 .footer {
-    background-color: #F2F2F2;
+    &__main {
+        background-color: #F2F2F2;
+    }
     &__content {
         padding: 44px 0 40px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        
         @media (min-width: 601px) {
             justify-content: space-between;
             padding: 127px 0 111px;
@@ -160,6 +163,7 @@
     &__cop {
         border-top: 1px solid #000000;
         padding: 15px 0 17px;
+        background-color: #F2F2F2;
         @media (min-width: 601px) {
             padding: 34px 0 39px;
         }

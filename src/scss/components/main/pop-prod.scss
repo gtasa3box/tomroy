@@ -1,0 +1,18 @@
+.pop-prod {
+    padding: 36px 0 40px;
+    &__slider {
+        width: 100%;
+    }
+    &__btn {
+        width: 100%;
+        height: 49px;
+        font-family: 'NotoSansJP',sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 23px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        margin-top: 67px;
+    }
+}
