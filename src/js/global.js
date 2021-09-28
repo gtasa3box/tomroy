@@ -4,17 +4,17 @@ $('#burger').on('click', function(){
     $('.nav').toggleClass('active')
 });
 //dropdown
-// $('.nav__elem-dropbox').on('click', function(){
-//     $(this).toggleClass('active')
-//     $('.nav__elem-drop').slideUp() 
-//     $($(this).data('target')).stop(true, false).slideToggle() 
-// });
-
-$('.nav__elem-dropbox').hover(function(){
+$('.tringle-drop').on('click', function(){
     $(this).toggleClass('active')
     $('.nav__elem-drop').slideUp() 
     $($(this).data('target')).stop(true, false).slideToggle() 
 });
+
+// $('.nav__elem-dropbox').hover(function(){
+//     $(this).toggleClass('active')
+//     $('.nav__elem-drop').slideUp() 
+//     $($(this).data('target')).stop(true, false).slideToggle() 
+// });
 
 $('.filters__title').on('click', function(){
   $(this).toggleClass('active') 
