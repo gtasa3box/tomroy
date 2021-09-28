@@ -6,6 +6,7 @@ $('#burger').on('click', function(){
 //dropdown
 $('.nav__elem-dropbox').on('click', function(){
     $(this).toggleClass('active')
+    $('.nav__elem-drop').slideUp() 
     $($(this).data('target')).stop(true, false).slideToggle() 
 });
 
