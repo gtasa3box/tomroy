@@ -28,11 +28,110 @@
             top: 50%;
             transform: translateY(-50%);
             right: 7px;
+            transition: 0.3s ease;
             @media (min-width: 601px) {
                 width: 12px;
                 height: 6px;
                 right: 17px;
             }
         }
+        &.active {
+            &:before {
+                transform: translateY(-50%) rotate(180deg);
+            }
+        }
+    }
+    &__drop {
+        padding: 35px 0 50px;
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    &__checkbox {
+        label {
+            width: 100%; 
+        }
+    }
+    &__color {
+        label {
+            width: initial;
+            :not(:last-child) {
+                margin-right: 45px;
+            }
+        }
+    }
+    &__heightheel {
+        label {
+            width: 50%;
+        }
+    }
+    &__size {
+        label {
+            width: 50%;
+        }
+    }
+
+    //checkboxes
+
+    input[type=checkbox] {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        cursor: pointer;
+    }
+    label {
+        font-family: 'NotoSansJP',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+    input[type=checkbox]+label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+        &:before {
+            content: '';
+            display: inline-block;
+            position: relative;
+            width: 28px;
+            height: 28px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border: 1px solid black;
+            margin-right: 20px;
+            background-repeat: no-repeat;
+            background-position: left 4px top 2px;
+            background-size: 80% 80%;
+            transition: 0.3s ease;
+        }
+    }
+    input[type=checkbox]:checked+label {
+        font-weight: 600;
+        color: #000000;
+        position: relative;
+        &::before {
+            background-image: url(../img/catalog/check.svg);  
+        }
+    }
+    &__color {
+
+        input[type=checkbox]+label {
+            &:before {
+                border: 4px dotted transparent;
+                background-size: 0%;
+                background-color: var(--my-color-var);
+            }
+        }
+        input[type=checkbox]:checked+label {
+            &:before {
+                border-color: white;
+            }
+        }
+
     }
 }

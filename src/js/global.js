@@ -16,6 +16,11 @@ $('.nav__elem-dropbox').hover(function(){
     $($(this).data('target')).stop(true, false).slideToggle() 
 });
 
+$('.filters__title').on('click', function(){
+  $(this).toggleClass('active') 
+  $($(this).data('target')).stop(true, false).slideToggle()  
+});
+
 //inst-slider 
 $('.slider-inst').slick({
     arrows: true,
