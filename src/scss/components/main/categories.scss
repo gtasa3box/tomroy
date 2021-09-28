@@ -1,0 +1,221 @@
+.categories {
+    &__content {
+        margin-top: 16px;
+        padding-bottom: 50px;
+        @media (min-width:601px) {
+            margin-top: 74px;
+            padding-bottom: 155px;
+        }
+    }
+    &__item {
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 54px;
+        @media (min-width:601px) {
+            height: 550px;
+            padding-top: 0;
+            flex-direction: column;
+            justify-content: flex-end;
+            position: relative;
+        }
+        &:not(:last-child) {
+            margin-bottom: 30px;
+            @media (min-width:601px) {
+                margin-bottom: 70px;
+            }
+        }
+    }
+    &__img {
+        display: block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        width: 279px;
+        height: 181px;  
+        @media (min-width:601px) {
+            position: absolute;
+        }      
+    }
+    &__info {
+        position: relative;
+        z-index: 2;
+    }
+    &__itemtitle {
+        font-family: 'Evolventa',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        color: #000000;
+        width: 100%;
+        @media (min-width:601px) {
+            font-size: 64px;
+            line-height: 85px;
+            width: auto;
+        }
+    }
+    &__text {
+        font-family: 'Noto Sans JP',sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.7);
+        margin: 7px 0 130px;
+        width: 100%;
+        @media (min-width:601px) {
+            margin: 14px 0 218px;
+            font-size: 24px;
+            line-height: 35px; 
+            width: auto;
+        }
+    }
+    &__btn {
+        width: 186px;
+        height: 45px;
+        font-family: 'NotoSansJP',sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 40px;
+        position: relative;
+        @media (min-width:601px) {
+            width: 245px;
+            height: 62px;
+            font-size: 22px;
+            line-height: 32px;
+            margin-bottom: 60px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 95px;
+            border-left: 1px solid #000000;
+            top: -115px;
+            @media (min-width:601px) {
+                height: 163px;
+                top: -193px;
+            }
+        }
+    }
+    &__item {
+        &_sneakers {
+            padding-top: 12px;
+            @media (min-width:601px) {
+                padding-top: 0;
+                align-items: flex-end;
+            }
+            .categories__info {
+                @media (min-width:601px) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-right: 233px;
+                }
+            }
+            .categories__img {
+                width: 300px;
+                height: 300px;
+                @media (min-width:601px) {
+                    width: 509px;
+                    height: 509px;
+                    left: 170px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            .categories__btn {
+                @media (min-width:601px) {
+                    &::after {
+                        right: 0;
+                    }
+                } 
+            }
+        }
+        &_shoes {
+            padding-top: 57px;
+            @media (min-width:601px) {
+                padding-top: 0;
+                align-items: center;
+            }
+            .categories__info {
+                @media (min-width:601px) {
+                    @media (min-width:601px) {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+            }
+            .categories__img {
+                width: 150px;
+                height: 150px;
+                @media (min-width:601px) {
+                    width: 500px;
+                    height: 500px;
+                    transform: translateY(-50%);
+                    &_left {
+                        left: 74px;
+                        top: 50%;
+                    }
+                    &_right {
+                        right: 68px;
+                        top: 50%;
+                    }
+                }
+            }
+            .categories__itemtitle {
+                margin-top: 35px;
+            }
+            .categories__btn {
+                
+            }
+        }
+        &_bags {
+            .categories__itemtitle {
+                margin-top: 77px;
+            }
+            .categories__info {
+                align-items: flex-start;
+                @media (min-width:601px) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-left: 145px;
+                }
+            }
+            .categories__img {
+                @media (min-width:601px) {
+                    width: 705px;
+                    height: 455px;
+                    right: 68px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            .categories__btn {
+                @media (min-width:601px) {
+                    &::after {
+                        left: 0;
+                    }
+                } 
+            }
+        }
+    }
+}
