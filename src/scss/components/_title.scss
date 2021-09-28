@@ -1,7 +1,7 @@
 .title {
     padding: 24px 0;
     &_flex {
-        @media (min-width:601px) {
+        @media (min-width:800px) {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -50,11 +50,13 @@
         color: #000000;
         margin-top: 21px;
         @media (min-width:601px) {
-            margin-top: 0;
             font-size: 20px;
             line-height: 29px;
             width: 248px;
             height: 55px;
+        }
+        @media (min-width:800px) {
+            margin-top: 0;
         }
     }
 }
