@@ -12,6 +12,7 @@
 @import "./components/card";
 @import "./components/yellow-line";
 @import "./components/breadcrumbs";
+@import "./components/filters";
 
 //header
 @import "./components/header";
@@ -20,6 +21,9 @@
 @import "./components/main/intro";
 @import "./components/main/pop-prod";
 @import "./components/main/categories";
+
+//catalog
+@import "./components/catalog/catalog";
 
 //footer
 @import "./components/footer";

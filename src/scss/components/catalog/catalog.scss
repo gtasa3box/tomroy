@@ -1,0 +1,25 @@
+.catalog {
+    &__title {
+        font-family: 'Evolventa',sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #000000;
+        @media (min-width: 601px) {
+            font-size: 48px;
+            line-height: 64px;
+        }
+    }
+    &__content {
+        margin-top: 22px;
+        @media (min-width: 601px) {
+            margin-top: 86px;
+        }
+    }
+    &__filters {
+        width: 22%;
+    }
+}
