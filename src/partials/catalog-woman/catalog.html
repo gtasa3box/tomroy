@@ -5,9 +5,9 @@
 
         <div class="catalog__content">
             <!--Filters-->
-            <div class="catalog__filters filters">
+            <div class="catalog__filters filters" id="filters__main">
                 <div class="filters__checkbox filters__material">
-                    <h4 class="filters__title" data-target="#material">Материал</h4>
+                    <h4 class="filters__title active" data-target="#material">Материал</h4>
                     <div id="material" class="filters__drop">
                         <input id="zam" type="checkbox">
                         <label for="zam">Нат. замша</label>
@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="filters__checkbox filters__color">
-                    <h4 class="filters__title" data-target="#color">Цвет</h4>
+                    <h4 class="filters__title active" data-target="#color">Цвет</h4>
                     <div class="filters__drop" id="color">
                         <input id="DDB4A5" type="checkbox">
                         <label for="DDB4A5" style="--my-color-var: #DDB4A5;"></label>
@@ -65,7 +65,7 @@
                 </div>
 
                 <div class="filters__checkbox filters__season">
-                    <h4 class="filters__title" data-target="#season">Сезон</h4>
+                    <h4 class="filters__title active" data-target="#season">Сезон</h4>
                     <div class="filters__drop" id="season">
                         <input id="allseason" type="checkbox">
                         <label for="allseason">Внесезон</label>
@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="filters__checkbox filters__style">
-                    <h4 class="filters__title" data-target="#style">Стиль</h4>
+                    <h4 class="filters__title active" data-target="#style">Стиль</h4>
                     <div class="filters__drop" id="style">
                         <input id="grange" type="checkbox">
                         <label for="grange">Гранж</label>
@@ -104,7 +104,7 @@
                 </div>
 
                 <div class="filters__checkbox filters__heel">
-                    <h4 class="filters__title" data-target="#heel">Каблук</h4>
+                    <h4 class="filters__title active" data-target="#heel">Каблук</h4>
                     <div class="filters__drop" id="heel">
                         <input id="lowheel" type="checkbox">
                         <label for="lowheel">Низкий</label>
@@ -128,7 +128,7 @@
                 </div>
 
                 <div class="filters__checkbox filters__heightheel">
-                    <h4 class="filters__title" data-target="#heightheels">Высота каблука</h4>
+                    <h4 class="filters__title active" data-target="#heightheels">Высота каблука</h4>
                     <div class="filters__drop" id="heightheels">
                         <input id="1sm" type="checkbox">
                         <label for="1sm">1 см</label>
@@ -167,7 +167,7 @@
                 </div>
 
                 <div class="filters__checkbox filters__country">
-                    <h4 class="filters__title" data-target="#country">Производитель</h4>
+                    <h4 class="filters__title active" data-target="#country">Производитель</h4>
                     <div class="filters__drop" id="country">
                         <input id="china" type="checkbox">
                         <label for="china">Китай</label>
@@ -179,7 +179,7 @@
                 </div>
 
                 <div class="filters__checkbox filters__size">
-                    <h4 class="filters__title" data-target="#bootsize">Размер обуви</h4>
+                    <h4 class="filters__title active" data-target="#bootsize">Размер обуви</h4>
                     <div class="filters__drop" id="bootsize">
                         <input id="35size" type="checkbox">
                         <label for="35size">35</label>
@@ -207,9 +207,266 @@
             </div>
             <!--Items-->
             <div class="catalog__items">
-                
+                <div class="catalog__filtersitems">
+                    <div class="catalog__filters-mob">
+                        <h4 class="filters__title" data-target="#filters__main">Фильтр</h4>
+                    </div>
+                    <div class="catalog__sort">
+                        <h4 class="filters__title" data-target="#filters__select">Сортировка</h4>
+                        <div class="catalog__select" id="filters__select">
+                            <a href="" class="catalog__select-item">По цене</a>
+                            <a href="" class="catalog__select-item">По популярности</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__card card">
+                    <div class="card__wrapper">
+                        <a href="" class="card__discont card__discont_yellow">New</a>
+                        <a href="" class="card__img" style="background-image: url(img/pop-prod/1.jpg);"></a>
+                        <h3 class="card__title">БОСОНОЖКИ АНКЛ-СТРЭП КОЖАНЫЕ БЕЖЕВЫЕ</h3>
+                        <p class="card__price">10 990 руб</p>
+                        <a class="card__basket" href="">В корзину</a>
+                        <a href="" class="card__btn btn btn_white">Купить</a>
+                    </div>
+                </div>
 
+                <div class="catalog__card card">
+                    <div class="card__wrapper">
+                        <a href="" class="card__discont card__discont_red">50%</a>
+                        <a href="" class="card__img" style="background-image: url(img/pop-prod/2.jpg);"></a>
+                        <h3 class="card__title">КЕДЫ МУЖСКИЕ КОЖАНЫЕ</h3>
+                        <p class="card__price">11 590 руб</p>
+                        <a class="card__basket" href="">В корзину</a>
+                        <a href="" class="card__btn btn btn_white">Купить</a>
+                    </div>
+                </div>
+
+                <div class="catalog__card card">
+                    <div class="card__wrapper">
+                        <a href="" class="card__discont"></a>
+                        <a href="" class="card__img" style="background-image: url(img/pop-prod/3.jpg);"></a>
+                        <h3 class="card__title">СУМКА-СЕДЛО КОЖАНАЯ</h3>
+                        <p class="card__price">6 590 руб</p>
+                        <a class="card__basket" href="">В корзину</a>
+                        <a href="" class="card__btn btn btn_white">Купить</a>
+                    </div>
+                </div>
+
+                <div class="catalog__card card">
+                    <div class="card__wrapper">
+                        <a href="" class="card__discont"></a>
+                        <a href="" class="card__img" style="background-image: url(img/pop-prod/4.jpg);"></a>
+                        <h3 class="card__title">БОСОНОЖКИ АНКЛ-СТРЭП КОЖАНЫЕ БЕЖЕВЫЕ</h3>
+                        <p class="card__price">12 590 руб</p>
+                        <a class="card__basket" href="">В корзину</a>
+                        <a href="" class="card__btn btn btn_white">Купить</a>
+                    </div>
+                </div>
+
+
+                <div class="catalog__card card">
+                    <div class="card__wrapper">
+                        <a href="" class="card__discont"></a>
+                        <a href="" class="card__img" style="background-image: url(img/pop-prod/3.jpg);"></a>
+                        <h3 class="card__title">БОСОНОЖКИ АНКЛ-СТРЭП КОЖАНЫЕ БЕЖЕВЫЕ</h3>
+                        <p class="card__price">10 990 руб</p>
+                        <a class="card__basket" href="">В корзину</a>
+                        <a href="" class="card__btn btn btn_white">Купить</a>
+                    </div>
+                </div>
+
+
+                <div class="catalog__card card">
+                    <div class="card__wrapper">
+                        <a href="" class="card__discont"></a>
+                        <a href="" class="card__img" style="background-image: url(img/pop-prod/2.jpg);"></a>
+                        <h3 class="card__title">БОСОНОЖКИ АНКЛ-СТРЭП КОЖАНЫЕ БЕЖЕВЫЕ</h3>
+                        <p class="card__price">10 990 руб</p>
+                        <a class="card__basket" href="">В корзину</a>
+                        <a href="" class="card__btn btn btn_white">Купить</a>
+                    </div>
+                </div>
+
+                <div class="catalog__card card">
+                    <div class="card__wrapper">
+                        <a href="" class="card__discont"></a>
+                        <a href="" class="card__img" style="background-image: url(img/pop-prod/2.jpg);"></a>
+                        <h3 class="card__title">БОСОНОЖКИ АНКЛ-СТРЭП КОЖАНЫЕ БЕЖЕВЫЕ</h3>
+                        <p class="card__price">10 990 руб</p>
+                        <a class="card__basket" href="">В корзину</a>
+                        <a href="" class="card__btn btn btn_white">Купить</a>
+                    </div>
+                </div>
+
+                               
+                <div class="catalog__card card">
+                    <div class="card__wrapper">
+                        <a href="" class="card__discont"></a>
+                        <a href="" class="card__img" style="background-image: url(img/pop-prod/1.jpg);"></a>
+                        <h3 class="card__title">БОСОНОЖКИ АНКЛ-СТРЭП КОЖАНЫЕ БЕЖЕВЫЕ</h3>
+                        <p class="card__price">10 990 руб</p>
+                        <a class="card__basket" href="">В корзину</a>
+                        <a href="" class="card__btn btn btn_white">Купить</a>
+                    </div>
+                </div>
+
+                <div class="catalog__card card">
+                    <div class="card__wrapper">
+                        <a href="" class="card__discont card__discont_red">50%</a>
+                        <a href="" class="card__img" style="background-image: url(img/pop-prod/2.jpg);"></a>
+                        <h3 class="card__title">КЕДЫ МУЖСКИЕ КОЖАНЫЕ</h3>
+                        <p class="card__price">11 590 руб</p>
+                        <a class="card__basket" href="">В корзину</a>
+                        <a href="" class="card__btn btn btn_white">Купить</a>
+                    </div>
+                </div>
+
+                <div class="catalog__card card">
+                    <div class="card__wrapper">
+                        <a href="" class="card__discont"></a>
+                        <a href="" class="card__img" style="background-image: url(img/pop-prod/3.jpg);"></a>
+                        <h3 class="card__title">СУМКА-СЕДЛО КОЖАНАЯ</h3>
+                        <p class="card__price">6 590 руб</p>
+                        <a class="card__basket" href="">В корзину</a>
+                        <a href="" class="card__btn btn btn_white">Купить</a>
+                    </div>
+                </div>
+
+                <div class="catalog__card card">
+                    <div class="card__wrapper">
+                        <a href="" class="card__discont"></a>
+                        <a href="" class="card__img" style="background-image: url(img/pop-prod/4.jpg);"></a>
+                        <h3 class="card__title">БОСОНОЖКИ АНКЛ-СТРЭП КОЖАНЫЕ БЕЖЕВЫЕ</h3>
+                        <p class="card__price">12 590 руб</p>
+                        <a class="card__basket" href="">В корзину</a>
+                        <a href="" class="card__btn btn btn_white">Купить</a>
+                    </div>
+                </div>
+
+
+                <div class="catalog__card card">
+                    <div class="card__wrapper">
+                        <a href="" class="card__discont"></a>
+                        <a href="" class="card__img" style="background-image: url(img/pop-prod/3.jpg);"></a>
+                        <h3 class="card__title">БОСОНОЖКИ АНКЛ-СТРЭП КОЖАНЫЕ БЕЖЕВЫЕ</h3>
+                        <p class="card__price">10 990 руб</p>
+                        <a class="card__basket" href="">В корзину</a>
+                        <a href="" class="card__btn btn btn_white">Купить</a>
+                    </div>
+                </div>
+
+
+                <div class="catalog__card card">
+                    <div class="card__wrapper">
+                        <a href="" class="card__discont"></a>
+                        <a href="" class="card__img" style="background-image: url(img/pop-prod/2.jpg);"></a>
+                        <h3 class="card__title">БОСОНОЖКИ АНКЛ-СТРЭП КОЖАНЫЕ БЕЖЕВЫЕ</h3>
+                        <p class="card__price">10 990 руб</p>
+                        <a class="card__basket" href="">В корзину</a>
+                        <a href="" class="card__btn btn btn_white">Купить</a>
+                    </div>
+                </div>
+
+                <div class="catalog__card card">
+                    <div class="card__wrapper">
+                        <a href="" class="card__discont"></a>
+                        <a href="" class="card__img" style="background-image: url(img/pop-prod/2.jpg);"></a>
+                        <h3 class="card__title">БОСОНОЖКИ АНКЛ-СТРЭП КОЖАНЫЕ БЕЖЕВЫЕ</h3>
+                        <p class="card__price">10 990 руб</p>
+                        <a class="card__basket" href="">В корзину</a>
+                        <a href="" class="card__btn btn btn_white">Купить</a>
+                    </div>
+                </div>
+                               
+                <div class="catalog__card card">
+                    <div class="card__wrapper">
+                        <a href="" class="card__discont"></a>
+                        <a href="" class="card__img" style="background-image: url(img/pop-prod/1.jpg);"></a>
+                        <h3 class="card__title">БОСОНОЖКИ АНКЛ-СТРЭП КОЖАНЫЕ БЕЖЕВЫЕ</h3>
+                        <p class="card__price">10 990 руб</p>
+                        <a class="card__basket" href="">В корзину</a>
+                        <a href="" class="card__btn btn btn_white">Купить</a>
+                    </div>
+                </div>
+
+                <div class="catalog__card card">
+                    <div class="card__wrapper">
+                        <a href="" class="card__discont card__discont_red">50%</a>
+                        <a href="" class="card__img" style="background-image: url(img/pop-prod/2.jpg);"></a>
+                        <h3 class="card__title">КЕДЫ МУЖСКИЕ КОЖАНЫЕ</h3>
+                        <p class="card__price">11 590 руб</p>
+                        <a class="card__basket" href="">В корзину</a>
+                        <a href="" class="card__btn btn btn_white">Купить</a>
+                    </div>
+                </div>
+
+                <div class="catalog__card card">
+                    <div class="card__wrapper">
+                        <a href="" class="card__discont"></a>
+                        <a href="" class="card__img" style="background-image: url(img/pop-prod/3.jpg);"></a>
+                        <h3 class="card__title">СУМКА-СЕДЛО КОЖАНАЯ</h3>
+                        <p class="card__price">6 590 руб</p>
+                        <a class="card__basket" href="">В корзину</a>
+                        <a href="" class="card__btn btn btn_white">Купить</a>
+                    </div>
+                </div>
+
+                <div class="catalog__card card">
+                    <div class="card__wrapper">
+                        <a href="" class="card__discont"></a>
+                        <a href="" class="card__img" style="background-image: url(img/pop-prod/4.jpg);"></a>
+                        <h3 class="card__title">БОСОНОЖКИ АНКЛ-СТРЭП КОЖАНЫЕ БЕЖЕВЫЕ</h3>
+                        <p class="card__price">12 590 руб</p>
+                        <a class="card__basket" href="">В корзину</a>
+                        <a href="" class="card__btn btn btn_white">Купить</a>
+                    </div>
+                </div>
+
+
+                <div class="catalog__card card">
+                    <div class="card__wrapper">
+                        <a href="" class="card__discont"></a>
+                        <a href="" class="card__img" style="background-image: url(img/pop-prod/3.jpg);"></a>
+                        <h3 class="card__title">БОСОНОЖКИ АНКЛ-СТРЭП КОЖАНЫЕ БЕЖЕВЫЕ</h3>
+                        <p class="card__price">10 990 руб</p>
+                        <a class="card__basket" href="">В корзину</a>
+                        <a href="" class="card__btn btn btn_white">Купить</a>
+                    </div>
+                </div>
+
+
+                <div class="catalog__card card">
+                    <div class="card__wrapper">
+                        <a href="" class="card__discont"></a>
+                        <a href="" class="card__img" style="background-image: url(img/pop-prod/2.jpg);"></a>
+                        <h3 class="card__title">БОСОНОЖКИ АНКЛ-СТРЭП КОЖАНЫЕ БЕЖЕВЫЕ</h3>
+                        <p class="card__price">10 990 руб</p>
+                        <a class="card__basket" href="">В корзину</a>
+                        <a href="" class="card__btn btn btn_white">Купить</a>
+                    </div>
+                </div>
+
+                <div class="catalog__card card">
+                    <div class="card__wrapper">
+                        <a href="" class="card__discont"></a>
+                        <a href="" class="card__img" style="background-image: url(img/pop-prod/2.jpg);"></a>
+                        <h3 class="card__title">БОСОНОЖКИ АНКЛ-СТРЭП КОЖАНЫЕ БЕЖЕВЫЕ</h3>
+                        <p class="card__price">10 990 руб</p>
+                        <a class="card__basket" href="">В корзину</a>
+                        <a href="" class="card__btn btn btn_white">Купить</a>
+                    </div>
+                </div>
+                <!--page_nav-->
+                <div class="catalog__page-nav">
+                    <a href="" class="catalog__nav-elem active">1</a>
+                    <a href="" class="catalog__nav-elem">2</a>
+                    <a href="" class="catalog__nav-elem">3</a>
+                    <a href="" class="catalog__nav-elem">4</a>
+                    <a href="" class="catalog__nav-elem">&hellip;</a>
+                    <a href="" class="catalog__nav-elem">7</a>
+                </div>
             </div>
+            
         </div>
 
     </div>
