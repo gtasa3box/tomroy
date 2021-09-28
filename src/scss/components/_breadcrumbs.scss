@@ -1,0 +1,48 @@
+.breadcrumbs {
+    padding: 30px 0;
+    @media (min-width: 600px) {
+        padding: 40px 0;
+    }
+    &__content {
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__crumb {
+        font-family: 'NotoSansJP',sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 14px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #000000;
+        position: relative;
+        @media (min-width: 600px) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+        &:not(:last-child) {
+            margin-right: 52px;
+            @media (min-width: 600px) {
+                margin-right: 70px;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 1px;
+                border-bottom: 1px solid #000000;
+                right: -41px;
+                pointer-events: none;
+                top: 50%;
+                transform: translateY(-50%);
+                @media (min-width: 600px) {
+                    right: -50px;
+                }
+            }
+        }
+    }
+}
