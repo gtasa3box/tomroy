@@ -26,6 +26,49 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    $('.product-slider-main').slick({
+    slidesToShow: 1,
+    arrows: false,
+    asNavFor: '.product-slider-nav',
+    vertical: false,
+    autoplay: false,
+    verticalSwiping: true,
+    centerMode: true
+  });
+  
+  $('.product-slider-nav').slick({
+    slidesToShow: 3,
+    asNavFor: '.product-slider-main',
+    vertical: false,
+    focusOnSelect: true,
+    autoplay: false,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          vertical: false,
+        }
+      }
+    ]
+  });
+  
+  $(window).on('resize orientationchange', function() {
+    if ($(window).width() > 1200) {
+      $('.product-slider-nav').slick('unslick');
+      $('.product-slider-nav').slick({
+        slidesToShow: 3,
+        asNavFor: '.product-slider-main',
+        vertical: true,
+        focusOnSelect: true,
+        autoplay: false,
+        centerMode: true
+      });
+    }
+  });
+  </script>
 </body>
 
 </html>
