@@ -17,6 +17,11 @@
 //header
 @import "./components/header";
 
+//footer
+@import "./components/footer";
+@import "./components/footer/insta";
+@import "./components/footer/greenline";
+
 //main
 @import "./components/main/intro";
 @import "./components/main/pop-prod";
@@ -29,7 +34,5 @@
 @import "./components/product/product-card";
 @import "./components/product/benefits";
 
-//footer
-@import "./components/footer";
-@import "./components/footer/insta";
-@import "./components/footer/greenline";
+//company
+@import "./components/company/intro-company";

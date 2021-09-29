@@ -1,0 +1,55 @@
+.intro-company {
+    position: relative;
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 360px;
+        @media (min-width: 601px) {
+            padding-bottom: 80px;
+        }
+    }
+    &__info{
+        width: 100%;
+        @media (min-width: 601px) {
+            width: 48%;
+            padding: 36px 0 80px;
+        }
+    }
+    &__img {
+        position: absolute;
+        display: block;
+        background-image: url(../img/company/1.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 360px;
+        height: 305px;
+        right: 0;
+        bottom: 30px;
+        @media (min-width: 601px) {
+            bottom: initial;
+            top: 20px;
+            width: 845px;
+            height: 711px;
+        }
+    }
+    &__text {
+        font-family: 'NotoSansJP',sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 17px;
+        color: rgba(0, 0, 0, 0.8);
+        @media (min-width: 601px) {
+            font-size: 20px;
+            line-height: 29px;
+        }
+        span {
+            margin-bottom: 15px;
+            display: block;
+            @media (min-width: 601px) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
