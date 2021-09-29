@@ -5,6 +5,7 @@ $('#burger').on('click', function(){
 });
 //dropdown
 $('.tringle-drop').on('click', function(){
+    $('.tringle-drop').not(this).removeClass('active')
     $(this).toggleClass('active')
     $('.nav__elem-drop').slideUp() 
     $($(this).data('target')).stop(true, false).slideToggle() 
