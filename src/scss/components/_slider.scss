@@ -360,12 +360,18 @@
     @media (min-width:601px) {
       margin-bottom: 218px;
     }
+    @media (min-width:601px) and (max-width:900px) {
+      margin-bottom: 40px;
+    }
     &__slide {
       width: 319px;
       height: 200px;
       @media (min-width:601px) {
         width: 837px;
         height: 340px;
+      }
+      @media (min-width:601px) and (max-width:900px) {
+        height: 100px;
       }
     }
     &__img {

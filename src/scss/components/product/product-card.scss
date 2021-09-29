@@ -15,11 +15,17 @@
             width: 53%;
             padding-top: 80px;
         }
+        @media (min-width:601px) and (max-width:900px) {
+            width: 35%;
+        }
     }
     &__info {
         width: 100%;
         @media (min-width:601px) {
             width: 35%;
+        }
+        @media (min-width:601px) and (max-width:900px) {
+            width: 60%;
         }
     }
     &__title {
@@ -251,6 +257,9 @@
                 font-size: 16px;
                 line-height: 23px;
             }
+            @media (min-width:601px) and (max-width:900px) {
+                width: 100%;
+            }
         }
         &-buy {
             margin-top: 20px;
@@ -264,10 +273,12 @@
             text-align: center;
             color: #000000;
             @media (min-width:601px) {
-                margin-top: 0;
                 height: 48px;
                 font-size: 16px;
                 line-height: 23px;
+            }
+            @media (min-width:1240px) {
+                margin-top: 0;
             }
         }
     }
