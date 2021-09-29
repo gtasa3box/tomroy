@@ -1,6 +1,314 @@
 .product-card {
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @media (min-width:601px) {
+            padding-top: 140px;
+        }
+    }
     &__slider {
         width: 100%;
         overflow: hidden;
+        padding-bottom: 30px;
+        @media (min-width:601px) {
+            width: 53%;
+            padding-top: 80px;
+        }
+    }
+    &__info {
+        width: 100%;
+        @media (min-width:601px) {
+            width: 35%;
+        }
+    }
+    &__title {
+        font-family: 'Evolventa',sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #000000;
+        @media (min-width:601px) {
+            font-size: 40px;
+            line-height: 53px;
+        }
+    }
+    &__art {
+        font-family: 'Noto Sans JP',sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 17px;
+        color: #000000;
+        margin: 13px 0 35px;
+        @media (min-width:601px) {
+            font-size: 18px;
+            line-height: 26px;
+            margin: 30px 0 57px;
+        }
+    }
+    &__price {
+        display: flex;
+        justify-content: space-between;  
+        align-items: center;   
+        font-family: 'NotoSansJP',sans-serif;
+        font-style: normal;
+        a {
+            display: inline-flex;
+        }
+        &-old {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 26px;
+            text-decoration-line: line-through;
+            @media (min-width:601px) {
+                font-size: 24px;
+                line-height: 35px;
+            }
+        }
+        &-new {
+            font-weight: bold;
+            font-size: 23px;
+            line-height: 164.8%;
+            letter-spacing: 0.025em;
+            color: #000000;
+            @media (min-width:601px) {
+                font-size: 30px;
+            }
+        }
+        &-dis {
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 21px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #FFFFFF;
+            width: 62px;
+            height: 37px;
+            justify-content: center;
+            align-items: center;
+            @media (min-width:601px) {
+                width: 81px;
+                height: 48px;
+                font-size: 20px;
+                line-height: 29px;
+            }
+            &_red {
+                background: #FF4342;
+                box-shadow: 0px 0px 7.66667px rgba(209, 194, 116, 0.3);
+            }
+        }
+    }
+    &__size {
+        padding: 10px 9px;
+        border-bottom: 1px solid #000000;
+        font-family: 'NotoSansJP',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 17px;
+        color: #000000;
+        margin: 30px 0 20px;
+        @media (min-width:601px) {
+            margin: 57px 0 35px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+        &-change {
+            display: flex;
+            justify-content: space-between;
+            @media (min-width:601px) {
+                justify-content: flex-start;
+            }
+            a {
+                width: 46px;
+                height: 46px;
+                border: 1px solid #000000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'NotoSansJP',sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 26px;
+                color: #000000;
+                transition: 0.3s ease;
+                cursor: pointer;
+                @media (min-width:601px) {
+                    width: 50px;
+                    height: 50px;
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+                &.active {
+                    border-color: #688C8C;
+                    background-color: #688C8C;
+                    color: white;
+                }
+                &:not(:last-child) {
+                    @media (min-width:601px) {
+                        margin-right: 30px;
+                    }
+                }
+            }
+        }
+        &-table {
+            margin: 20px 0 40px;
+            display: block;
+            text-align: right;
+            font-family: 'NotoSansJP',sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 17px;
+            text-decoration-line: underline;
+            color: #000000;
+            transition: 0.3s ease;
+            @media (min-width:601px) {
+                margin: 30px 0 50px;
+                font-size: 14px;
+                line-height: 20px;
+            }
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    &__quantity {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'NotoSansJP',sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+        @media (min-width:601px) {
+            justify-content: flex-start;
+            font-size: 18px;
+            line-height: 26px;
+        }
+        &-change {
+            display: flex;
+            @media (min-width:601px) {
+                margin-left: 55px;
+            }
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 35px;
+                height: 35px;
+                border: 1px solid #000000;
+                font-weight: 500;
+                font-size: 21.28px;
+                line-height: 31px;
+                text-align: center;
+                color: #000000;
+                cursor: pointer;
+                @media (min-width:601px) {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 24px;
+                    line-height: 35px;
+                }
+                &:not(:last-child) {
+                    margin-right: 13px;
+                    @media (min-width:601px) {
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+    &__btn {
+        margin: 30px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @media (min-width:601px) {
+            justify-content: space-between;
+            margin: 30px 0 50px; 
+        }
+        &-basket {
+            width: 100%;
+            height: 44px;
+            font-family: 'NotoSansJP',sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            color: #FFFFFF;
+            @media (min-width:601px) {
+                width: 260px;
+                height: 48px;
+                font-size: 16px;
+                line-height: 23px;
+            }
+        }
+        &-buy {
+            margin-top: 20px;
+            width: 160px;
+            height: 40px;
+            font-family: 'NotoSansJP',sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            color: #000000;
+            @media (min-width:601px) {
+                margin-top: 0;
+                height: 48px;
+                font-size: 16px;
+                line-height: 23px;
+            }
+        }
+    }
+    &__char {
+        h3 {
+            font-family: 'NotoSansJP',sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 26px;
+            color: #000000;
+            margin-bottom: 20px;
+            @media (min-width:601px) {
+                font-size: 24px;
+                line-height: 35px;
+                margin-bottom: 30px;
+            }
+        }
+        p {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-family: 'NotoSansJP',sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 17px;
+            color: #000000;
+            @media (min-width:601px) {
+                font-size: 18px;
+                line-height: 26px;
+            }
+            span {
+                font-weight: 300;
+            }
+            &:not(:last-child) {
+                margin-bottom: 12px;
+                @media (min-width:601px) {
+                    margin-bottom: 20px; 
+                }
+            }
+        }
     }
 }

@@ -357,9 +357,16 @@
   &-main {
     width: 100%;  
     margin-bottom: 20px;
+    @media (min-width:601px) {
+      margin-bottom: 218px;
+    }
     &__slide {
       width: 319px;
       height: 200px;
+      @media (min-width:601px) {
+        width: 837px;
+        height: 340px;
+      }
     }
     &__img {
       display: block;
@@ -381,6 +388,10 @@
     &__slide {
       width: 80px;
       height: 80px;
+      @media (min-width:601px) {
+        width: 205px;
+        height: 205px;
+      }
     }
     &__img {
       display: block;
