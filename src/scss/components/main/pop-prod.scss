@@ -28,4 +28,10 @@
             transform: translateX(-50%);
         }
     }
+    &-similar {
+        padding-bottom: 60px;
+        @media (min-width:601px) {
+            padding-bottom: 120px;
+        }
+    }
 }
