@@ -1,0 +1,134 @@
+.contacts {
+    &__content {
+        font-family: 'NotoSansJP',sans-serif;
+        font-style: normal;
+        margin-bottom: 50px;
+        @media (min-width:601px) {
+            margin-bottom: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        a {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 180%;
+            letter-spacing: 0.12em;
+            color: #000000;
+            position: relative;
+            @media (min-width:601px) {
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+        p {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 180%;
+            letter-spacing: 0.12em;     
+            color: #000000;
+            @media (min-width:601px) {
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+    }
+    &__smalltitle {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 11px;
+        margin-top: 25px;
+        @media (min-width:601px) {
+            font-size: 24px;
+            line-height: 35px;
+            margin-bottom: 30px;
+            margin-top: 90px;
+        }
+    }
+    &__numbers {
+        @media (min-width:601px) {
+            display: flex;
+            flex-wrap: wrap;
+            h3 {
+                width: 100%;
+            }
+        }
+        &-num {
+            margin-left: 36px;
+            &::before {
+                content: '';
+                position: absolute;
+                left: -36px;
+                background-color: #688C8C;
+                border-radius: 50%;
+                width: 25px;
+                height: 25px;
+                background-image: url(../img/shops/phone.svg);
+                background-size: 15px 15px;
+                background-position: center;
+                background-repeat: no-repeat;
+                top: -2px; 
+            }
+        }
+        &-soc {
+            margin-top: 20px;
+            display: flex;
+            @media (min-width:601px) {
+                margin-top: 0;
+                margin-left: 50px;
+            }
+            a {
+                display: block;
+                width: 25px;
+                height: 25px;
+                &:first-child {
+                    margin-right: 8px;
+                }
+            }
+            .whatsapp {
+                background-image: url(../img/contacts/whatsapp.svg);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .viber {
+                background-image: url(../img/contacts/viber.svg);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            p {
+                margin-left: 13px;
+            }
+        }
+    }
+    &__email {
+        a {
+            margin-left: 36px;
+            text-decoration: underline;
+            &::before {
+                content: '';
+                position: absolute;
+                left: -36px;
+                background-color: #688C8C;
+                border-radius: 50%;
+                width: 25px;
+                height: 25px;
+                background-image: url(../img/contacts/mail.svg);
+                background-size: 15px 15px;
+                background-position: center;
+                background-repeat: no-repeat;
+                top: -2px; 
+            }
+        }
+    }
+    &__adres {
+        p {
+            max-width: 554px;
+        }
+    }
+}
