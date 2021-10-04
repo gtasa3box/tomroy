@@ -1,0 +1,78 @@
+.profile {
+    font-family: 'NotoSansJP',sans-serif;
+    font-style: normal;
+    padding-bottom: 55px;
+    @media (min-width:601px) {
+        padding-bottom: 70px;
+    }
+    p {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 180%;
+        letter-spacing: 0.025em;
+        color: rgba(0, 0, 0, 0.8);
+        margin-bottom: 40px;
+        @media (min-width:601px) {
+            font-size: 18px;
+            max-width: 1209px;
+        }
+    }
+    &__content {
+        background: #F2F2F2;
+    }
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 32px;
+        padding-bottom: 23px;
+        @media (min-width:601px) {
+            padding: 57px 0;
+        }
+    }
+    &__link {
+        width: 45%;
+        margin-bottom: 32px;
+        @media (min-width:601px) {
+            width: initial;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+        }
+        @media (min-width:601px) and (max-width:1133px) {
+            width: 45%;
+            margin-bottom: 30px;
+        }
+    }
+    &__img {
+        display: block;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 51px;
+        height: 51px;
+        margin-bottom: 12px;
+        @media (min-width:601px) {
+            margin-bottom: 0;
+            margin-right: 35px;
+            width: 58px;
+            height: 58px;
+        }
+    }
+    &__text {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.025em;
+        text-decoration-line: underline;
+        color: #000000;
+        cursor: pointer;
+        @media (min-width:601px) {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
