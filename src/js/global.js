@@ -128,3 +128,41 @@ $('.slider-pop-prod').slick({
     }
   ]
 });
+
+$('.slider-payment').slick({
+  arrows: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 6,
+  slidesToScroll: 2,
+  dots: false,
+  responsive: [
+    {
+      breakpoint: 1550,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        arrows: false,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 940,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        arrows: false,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        arrows: false,
+        dots: true
+      }
+    }
+  ]
+});
