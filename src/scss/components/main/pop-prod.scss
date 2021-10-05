@@ -34,4 +34,9 @@
             padding-bottom: 120px;
         }
     }
+    &-mob {
+        @media (max-width:601px) {
+            display: none;
+        }
+    }
 }

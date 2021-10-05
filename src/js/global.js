@@ -27,6 +27,11 @@ $('.question__droptitle').on('click', function(){
   $($(this).data('target')).stop(true, false).slideToggle()  
 });
 
+$('.promodrop').on('click', function(){
+  $(this).toggleClass('active') 
+  $($(this).data('target')).stop(true, false).slideToggle()  
+});
+
 //inst-slider 
 $('.slider-inst').slick({
     arrows: true,
