@@ -1,0 +1,89 @@
+.question {
+    font-family: 'NotoSansJP',sans-serif;
+    font-style: normal;
+    &__content {
+        @media (min-width:601px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        p {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 180%;
+            letter-spacing: 0.025em;
+            color: rgba(0, 0, 0, 0.8);
+            @media (min-width:601px) {
+                font-size: 18px;
+                text-transform: uppercase;
+                max-width: 1241px;
+            }
+        }
+    }
+    &__dropbox {
+        margin-top: 30px;
+        @media (min-width:601px) {
+            margin-top: 60px;
+            width: 48%;
+        }
+        @media (min-width:601px) and (max-width:930px) {
+            width: 100%;
+            margin-top: 40px;
+        }
+    }
+    &__droptitle {
+        position: relative;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 180%;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #000000;
+        background: #F2F2F2;
+        border: 1px solid #000000;
+        padding: 15px 20px;
+        cursor: pointer;
+        @media (min-width:601px) {
+            font-size: 18px;
+            padding: 24px 30px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/arrowdrop.svg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 14px;
+            height: 7px;
+            transform: translateY(-50%) rotate(180deg);
+            right: 20px;
+            top: 50%;
+            transition: 0.3s ease;
+            @media (min-width:601px) {
+                width: 18px;
+                height: 9px;
+            }
+        }
+        &.active {
+            &:before {
+                transform: translateY(-50%);
+            }
+        }
+    }
+    &__droptext {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 180%;
+        letter-spacing: 0.12em;
+        color: rgba(0, 0, 0, 0.8);
+        border: 1px solid #000000;
+        border-top: none;
+        padding: 20px;
+        display: none;
+        @media (min-width:601px) {
+            font-size: 16px;
+            padding: 30px;
+        }
+    }
+}
