@@ -1,0 +1,112 @@
+.return {
+    font-family: 'NotoSansJP',sans-serif;
+    font-style: normal;
+    padding-bottom: 15px;
+    @media (min-width:601px) {
+        padding-bottom: 60px;
+    }
+    span {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 180%;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.8);
+        margin-bottom: 30px;
+        display: block;
+        @media (min-width:601px) {
+            font-size: 18px;
+            margin-bottom: 70px;
+            margin-top: 20px;
+        }
+    }
+    &__content {
+        h3 {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 180%;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #000000;
+            margin-bottom: 20px;
+            @media (min-width:601px) {
+                font-size: 18px;
+                margin-bottom: 40px;
+            }
+        }
+        h4 {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 180%;
+            letter-spacing: 0.06em;
+            color: #000000;
+            margin: 20px 0 10px;
+            @media (min-width:601px) {
+                font-size: 18px;
+                margin: 40px 0 20px;
+            }
+        }
+        p {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 180%;
+            letter-spacing: 0.06em;
+            color: rgba(0, 0, 0, 0.8);
+            margin: 0 0 40px;
+            @media (min-width:601px) {
+                font-size: 18px;
+                margin-bottom: 60px;
+            }
+        }
+        ol {
+            list-style: disc;
+            margin-bottom: 20px;
+            @media (min-width:601px) {
+                margin-bottom: 40px;
+            }
+            li {
+                margin-left: 15px;
+                margin-top: 5px;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 180%;
+                letter-spacing: 0.12em;
+                color: rgba(0, 0, 0, 0.8);
+                @media (min-width:601px) {
+                    font-size: 18px;
+                    max-width: 1535px;
+                }
+                &::marker {
+                    font-size: 10px;
+                }
+            }
+        }
+        ul {
+            list-style: decimal;
+            margin-bottom: 20px;
+            @media (min-width:601px) {
+                margin-bottom: 40px;
+            }
+            li {
+                margin-left: 15px;
+                margin-top: 5px;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 180%;
+                letter-spacing: 0.12em;
+                color: rgba(0, 0, 0, 0.8);
+                @media (min-width:601px) {
+                    font-size: 18px;
+                    max-width: 1535px;
+                    margin-left: 20px;
+                }
+                &::marker {
+                    font-size: 10px;
+                    @media (min-width:601px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
