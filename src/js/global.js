@@ -17,6 +17,11 @@ $('.tringle-drop').on('click', function(){
 //     $($(this).data('target')).stop(true, false).slideToggle() 
 // });
 
+$('.intro__btn-more').on('click', function(){
+  $(this).toggleClass('active') 
+  $($(this).data('target')).stop(true, false).slideToggle()  
+});
+
 $('.filters__title').on('click', function(){
   $(this).toggleClass('active') 
   $($(this).data('target')).stop(true, false).slideToggle()  
@@ -105,11 +110,11 @@ $('.slider-pop-prod').slick({
       }
     },
     {
-      breakpoint: 1180,
+      breakpoint: 1300,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 4,
         slidesToScroll: 2,
-        arrows: false,
+        arrows: true,
         dots: true
       }
     },

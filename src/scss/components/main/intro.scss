@@ -17,9 +17,12 @@
             width: 50%;
             padding: 181px 0;
         }
+        @media (min-width:601px) and (max-width: 1281px) {
+            padding: 93px 0 190px ;
+        }
         @media (min-width:601px) and (max-width: 1000px) {
             width: 100%;
-            padding: 80px;
+            padding: 80px 0;
         }
     }
     &__title {
@@ -35,6 +38,10 @@
             font-size: 72px;
             line-height: 96px;
         }
+        @media (min-width:601px) and (max-width: 1281px) {
+            font-size: 56px;
+            line-height: 74px;
+        }
     }
     &__text {
         font-family: 'NotoSansJP',sans-serif;
@@ -44,16 +51,48 @@
         line-height: 170%;
         letter-spacing: 0.025em;
         color: rgba(0, 0, 0, 0.7);
-        margin: 15px 0 30px;
+        margin: 15px 0 0;
         @media (min-width:601px) {
             max-width: 635px;
             font-size: 16px;
-            margin: 30px 0 53px;
+            margin: 30px 0 0;
+        }
+        @media (min-width:601px) and (max-width: 1281px) {
+            font-size: 14px;
+            line-height: 170%;
+            max-width: 519px;
+            margin: 20px 0 0;
+        }
+    }
+    .prev-text {
+        display: none;
+        font-family: 'NotoSansJP',sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 170%;
+        letter-spacing: 0.025em;
+        color: rgba(0, 0, 0, 0.7);
+        @media (min-width:601px) {
+            max-width: 635px;
+            font-size: 16px;
+        }
+        @media (min-width:601px) and (max-width: 1281px) {
+            font-size: 14px;
+            line-height: 170%;
+            max-width: 519px;
         }
     }
     &__btn {
         display: flex;
         align-items: center;
+        margin-top: 30px;
+        @media (min-width:601px) {
+            margin-top: 53px;
+        }
+        @media (min-width:601px) and (max-width: 1281px) {
+            margin-top: 45px;
+        }
         a {
             &:first-child {
                 margin-right: 35px;
@@ -65,11 +104,31 @@
                 font-size: 15px;
                 line-height: 22px;
                 letter-spacing: 0.025em;
+                position: relative;
                 @media (min-width:601px) {
                     width: 224px;
                     height: 46px;
                     font-size: 18px;
                     line-height: 26px;
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 19.11px;
+                    height: 9.97px;
+                    top: 50%;
+                    transform: translateY(-50%) rotate(180deg);
+                    right: -55px;
+                    background-image: url(../img/arrowdrop.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    transition: 0.3s ease;
+                }
+                &.active {
+                    &::before {
+                        transform: translateY(-50%);
+                    }
                 }
             }
         }
@@ -89,13 +148,16 @@
             right: 0;
             bottom: initial;
             top: 0;
-            height: 100%;
+            height: 700px;
         }
         @media (min-width:601px) and (max-width: 1000px)  {
             width: 100%;
             top: initial;
             bottom: 0;
             height: auto;
+        }
+        @media (min-width:601px) and (max-width: 1281px) {
+            height: 439px;
         }
     }
 }

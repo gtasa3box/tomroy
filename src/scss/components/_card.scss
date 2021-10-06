@@ -15,6 +15,11 @@
         height: 546px;
         padding: 42px 46px;
       }
+      @media (min-width:601px) and (max-width: 1281px) {
+        width: 240px;
+        height: 349.44px;
+        padding: 18px 20px;
+      }
     }
     &__discont {
       position: absolute;
@@ -33,6 +38,12 @@
         top: 16px;
         right: 32px;
       }
+      @media (min-width:601px) and (max-width: 1281px) {
+        width: 51.84px;
+        height: 30.08px;
+        top:10px;
+        right: 24px;
+      }
       &_red {
         font-family: 'NotoSansJP',sans-serif;
         font-style: normal;
@@ -48,6 +59,10 @@
         @media (min-width:601px) {
           font-size: 20px;
           line-height: 28px;
+        }
+        @media (min-width:601px) and (max-width: 1281px) {
+          font-size: 12px;
+          line-height: 17px;
         }
       }
       &_yellow {
@@ -66,6 +81,10 @@
           font-size: 20px;
           line-height: 29px;
         }
+        @media (min-width:601px) and (max-width: 1281px) {
+          font-size: 12px;
+          line-height: 17px;
+        }
       }
     }
     &__img {
@@ -77,6 +96,12 @@
       @media (min-width:601px) {
         width: 272px;
         height: 272px;
+      }
+      @media (min-width:601px) and (max-width: 1281px) {
+        width: 174.08px;
+        height: 174.08px;
+        background-size: contain;
+        background-repeat: no-repeat;
       }
     }
     &__title {
@@ -93,6 +118,11 @@
         margin: 32px 0 42px;
         width: 60%;
       }
+      @media (min-width:601px) and (max-width: 1281px) {
+        font-size: 10px;
+        line-height: 150%;
+        margin: 20px 0 30px;
+      }
     }
     &__price {
       font-family: 'Noto Sans JP',sans-serif;
@@ -107,6 +137,12 @@
         width: 40%;
         font-size: 16px;
         margin: 32px 0 42px;
+      }
+      @media (min-width:601px) and (max-width: 1281px)  {
+        margin: 30px 0 30px;
+        font-size: 10px;
+        line-height: 164.8%;
+        text-align: right;
       }
     }
     &__basket {
@@ -127,6 +163,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+      }
+      @media (min-width:601px) and (max-width: 1281px) {
+        font-size: 10px;
+        line-height: 14px;
       }
       &:before {
         content: '';
@@ -163,6 +203,12 @@
         height: 41px;
         font-size: 16px;
         line-height: 23px;
+      }
+      @media (min-width:601px) and (max-width: 1281px) {
+        width: 86.4px;
+        height: 26.24px;
+        font-size: 10px;
+        line-height: 14px;
       }
     }
 }
