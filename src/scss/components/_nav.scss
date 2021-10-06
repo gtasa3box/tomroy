@@ -2,16 +2,23 @@
     display: flex;
     flex-direction: column;
     transition: 0.3s ease;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
     right: -150%;
     position: absolute;
-    justify-content: center;
-    align-items: center;
     padding: 10px 0;
     z-index: 3;
+    top: 0;
+    height: 100vh;
+    padding-top: 102px;
     @media (min-width:601px) {
+        padding-top: 10px;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
         right: initial;
+        top: initial;
+        height: initial;
         flex-direction: row;
         justify-content: space-between;
         position: absolute;
@@ -22,12 +29,18 @@
     @media (min-width:601px) and (max-width:960px) {
         max-width: 600px;
     }
+    @media (min-width:601px) and (max-width: 1281px) {
+        max-width: 746px;
+    }
     &.active {
         right: 0;
     }
     a {
-        color: #000000;
+        color: white;
         transition: 0.3s ease;
+        @media (min-width:601px) {
+            color: #000000;
+        }
         &:hover {
             opacity: 0.8;
         }
@@ -45,27 +58,110 @@
         top: 2px;
         transition: 0.3s ease;
         cursor: pointer;
+        display: none;
+        @media (min-width:601px) {
+            display: inline-block;
+        }
+        @media (min-width:601px) and (max-width: 1281px) {
+            background-size: 40%;
+        }
         &.active {
             transform: rotate(180deg);
         }
     }
     &__elem {
         font-weight: 300;
-        font-size: 20px;
-        line-height: 29px;
+        font-size: 16px;
+        line-height: 23px;
         color: #000000;
         padding: 5px 0;
         position: relative;
         cursor: pointer;
+        @media (min-width:601px) {
+            font-size: 20px;
+            line-height: 29px;
+        }
+        @media (min-width:601px) and (max-width: 1281px) {
+            font-size: 16px;
+            line-height: 23px;
+        }
         &-child {
             font-size: 16px;
             line-height: 23px;
             padding: 3px 0;
+            @media (min-width:601px) and (max-width: 1281px) {
+                font-size: 12px;
+                line-height: 18px;
+            }
         }
         &-wrapper {
             @media (max-width:600px) {
                 width: 100%;
-                text-align: center;
+                text-align: right;
+                padding-right: 15px;
+                margin-bottom: 20px;
+            }
+        }
+        &-contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 15px;
+            color: white;
+            margin-top: 20px;
+            @media (min-width:600px) {
+                display: none;
+            }
+            .contact {
+                margin-left: 36px;
+                font-size: 12px;
+                line-height: 17px;
+                &::before {
+                    filter: invert(100%);
+                    width: 19px;
+                    height: 19px;
+                    left: -36px;
+                }
+            }
+            .lc {
+                position: relative;
+                margin-right: 49px;
+                display: flex;
+                align-items: center;
+                font-family: 'NotoSansJP',sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 17px;
+                color: #FFFFFF;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-image: url(../img/user.svg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position:center;
+                    width: 39px;
+                    height: 39px;
+                    filter: invert(100%);
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -49px;
+                }
+            }
+            .btn-contain {
+                width: 100%;
+                .btn {
+                    width: 179px;
+                    height: 40px;
+                    margin: 45px auto 0;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-size: 14px;
+                    line-height: 20px;
+                    border-color: white ;
+                }
             }
         }
         &-dropbox {

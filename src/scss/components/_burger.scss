@@ -40,8 +40,10 @@
 	-webkit-transform: rotate(-135deg); 
 	-o-transform: rotate(-135deg); 
 	transform: rotate(-135deg);
+	background-color: white;
 	&:before {
 		opacity: 0;
+		background-color: white;
 	}
 	&:after {
 		top: 0px;
@@ -50,5 +52,6 @@
 		-webkit-transform: rotate(270deg); 
 		-o-transform: rotate(270deg); 
 		transform: rotate(270deg);
+		background-color: white;
 	}
 }

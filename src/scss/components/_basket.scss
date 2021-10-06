@@ -15,6 +15,11 @@
             width: 40px;
             margin-right: 8px; 
         }
+        @media (min-width:601px) and (max-width: 1281px) {
+            height: 32px;
+            width: 32px;
+            margin-right: 10px;
+        }
     }
     &__text {
 
@@ -27,6 +32,10 @@
             font-size: 12px;
             line-height: 17px;
         }
+        @media (min-width:601px) and (max-width: 1281px) {
+            font-size: 10px;
+            line-height: 14px;
+        }
     }
     &__sum {
         font-weight: bold;
@@ -36,6 +45,10 @@
         @media (min-width:601px) {
             font-size: 16px;
             line-height: 23px;
+        }
+        @media (min-width:601px) and (max-width: 1281px) {
+            font-size: 14px;
+            line-height: 20px;
         }
     }
 }
