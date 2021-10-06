@@ -3,12 +3,18 @@
     @media (min-width:601px) {
         padding-top: 150px;
     }
+    @media (min-width:601px) and (max-width: 1281px) {
+        padding-top: 70px;
+    }
     &__content {
         margin-top: 16px;
         padding-bottom: 50px;
         @media (min-width:601px) {
             margin-top: 74px;
             padding-bottom: 155px;
+        }
+        @media (min-width:601px) and (max-width: 1281px) {
+            padding-bottom: 130px;
         }
     }
     &__item {
@@ -25,11 +31,17 @@
             justify-content: flex-end;
             position: relative;
         }
+        @media (min-width:601px) and (max-width: 1281px) {
+            height: 350px;
+        }
         &:not(:last-child) {
             margin-bottom: 30px;
             @media (min-width:601px) {
                 margin-bottom: 70px;
             }
+            @media (min-width:601px) and (max-width: 1281px) {
+                margin-bottom: 40px;
+            } 
         }
     }
     &__img {
@@ -71,6 +83,10 @@
             font-size: 40px;
             line-height: 60px;
         }
+        @media (min-width:601px) and (max-width: 1281px) {
+            font-size: 48px;
+            line-height: 64px;
+        }
     }
     &__text {
         font-family: 'Noto Sans JP',sans-serif;
@@ -96,6 +112,11 @@
             font-size: 18px;
             line-height: 28px;
         }
+        @media (min-width:601px) and (max-width: 1281px)  {
+            font-size: 18px;
+            line-height: 26px;
+            margin: 10px 0 122px;
+        }
     }
     &__btn {
         width: 186px;
@@ -118,6 +139,13 @@
             line-height: 32px;
             margin-bottom: 60px;
         }
+        @media (min-width:601px) and (max-width: 1281px) {
+            width: 245px;
+            height: 62px;
+            font-size: 22px;
+            line-height: 32px;
+            margin-bottom: 40px;
+        }
         &::after {
             content: '';
             position: absolute;
@@ -128,6 +156,10 @@
             @media (min-width:601px) {
                 height: 163px;
                 top: -193px;
+            }
+            @media (min-width:601px) and (max-width: 1281px) {
+                height: 92px;
+                top: -107px;
             }
         }
     }
@@ -145,6 +177,9 @@
                     align-items: flex-start;
                     margin-right: 233px;
                 }
+                @media (min-width:601px) and (max-width: 1281px) {
+                    margin-right: 67px;
+                }
             }
             .categories__img {
                 width: 300px;
@@ -159,6 +194,11 @@
                 @media (min-width:601px) and (max-width:900px) {
                     width: 300px;
                     height: 300px;
+                }
+                @media (min-width:601px) and (max-width: 1281px) {
+                    width: 340px;
+                    height: 340px;
+                    left: 115px;
                 }
             }
             .categories__btn {
@@ -204,6 +244,10 @@
                     width: 200px;
                     height: 200px;
                 }
+                @media (min-width:601px) and (max-width: 1281px) {
+                    width: 294px;
+                    height: 294px;
+                }
             }
             .categories__itemtitle {
                 margin-top: 35px;
@@ -223,6 +267,9 @@
                     align-items: flex-start;
                     margin-left: 145px;
                 }
+                @media (min-width:601px) and (max-width: 1281px) {
+                    margin-left: 93px;
+                }
             }
             .categories__img {
                 @media (min-width:601px) {
@@ -235,6 +282,10 @@
                 @media (min-width:601px) and (max-width:900px) {
                     width: 350px;
                     height: 225px;
+                }
+                @media (min-width:601px) and (max-width: 1281px) {
+                    width: 439px;
+                    height: 283px;
                 }
             }
             .categories__btn {
