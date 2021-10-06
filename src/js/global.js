@@ -1,8 +1,25 @@
+const scrolllistener = () => {
+  window.scrollTo(0, 0);
+};
+
 //burger
 $('#burger').on('click', function(){
     $('#burgerlink').toggleClass('active')
     $('.nav').toggleClass('active')
+    if (
+      $('.nav').hasClass('active')
+    ) {
+      window.addEventListener(
+        'scroll', scrolllistener
+      )
+    }
+    else {
+      window.removeEventListener(
+        'scroll',scrolllistener
+        )
+    }
 });
+
 //dropdown
 $('.tringle-drop').on('click', function(){
     $('.tringle-drop').not(this).removeClass('active')
