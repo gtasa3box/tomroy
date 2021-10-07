@@ -8,6 +8,10 @@
             padding-top: 140px;
             padding-bottom: 120px;
         }
+        @media (min-width:601px) and (max-width: 1281px){
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
     }
     &__slider {
         width: 100%;
@@ -43,6 +47,10 @@
             font-size: 40px;
             line-height: 53px;
         }
+        @media (min-width:601px) and (max-width: 1281px) {
+            font-size: 24px;
+            line-height: 32px;
+        }
     }
     &__art {
         font-family: 'Noto Sans JP',sans-serif;
@@ -56,6 +64,11 @@
             font-size: 18px;
             line-height: 26px;
             margin: 30px 0 57px;
+        }
+        @media (min-width:601px) and (max-width: 1281px) {
+            font-size: 14px;
+            line-height: 20px;
+            margin: 20px 0 35px;
         }
     }
     &__price {
@@ -76,6 +89,10 @@
                 font-size: 24px;
                 line-height: 35px;
             }
+            @media (min-width:601px) and (max-width: 1281px) {
+                font-size: 16px;
+                line-height: 23px;
+            }
         }
         &-new {
             font-weight: bold;
@@ -85,6 +102,10 @@
             color: #000000;
             @media (min-width:601px) {
                 font-size: 30px;
+            }
+            @media (min-width:601px) and (max-width: 1281px) {
+                font-size: 20px;
+                line-height: 164.8%;
             }
         }
         &-dis {
@@ -103,6 +124,12 @@
                 height: 48px;
                 font-size: 20px;
                 line-height: 29px;
+            }
+            @media (min-width:601px) and (max-width: 1281px) {
+                width: 54.67px;
+                height: 32.4px;
+                font-size: 14px;
+                line-height: 20px;
             }
             &_red {
                 background: #FF4342;
@@ -124,6 +151,11 @@
             margin: 57px 0 35px;
             font-size: 18px;
             line-height: 26px;
+        }
+        @media (min-width:601px) and (max-width: 1281px) {
+            font-size: 14px;
+            line-height: 20px;
+            margin: 33px 0 23px;
         }
         &-change {
             display: flex;
@@ -152,6 +184,12 @@
                     font-size: 20px;
                     line-height: 28px;
                 }
+                @media (min-width:601px) and (max-width: 1281px) {
+                    width: 33.75px;
+                    height: 33.75px;
+                    font-size: 13px;
+                    line-height: 19px;
+                }
                 &.active {
                     border-color: #688C8C;
                     background-color: #688C8C;
@@ -160,6 +198,9 @@
                 &:not(:last-child) {
                     @media (min-width:601px) {
                         margin-right: 30px;
+                    }
+                    @media (min-width:601px) and (max-width: 1281px) {
+                        margin-right: 20px;
                     }
                 }
             }
@@ -181,6 +222,11 @@
                 font-size: 14px;
                 line-height: 20px;
             }
+            @media (min-width:601px) and (max-width: 1281px) {
+                font-size: 10px;
+                line-height: 14px;
+                margin: 20px 0 34px;
+            }
             &:hover {
                 opacity: 0.8;
             }
@@ -201,10 +247,17 @@
             font-size: 18px;
             line-height: 26px;
         }
+        @media (min-width:601px) and (max-width: 1281px) {
+            font-size: 12px;
+            line-height: 17px;
+        }
         &-change {
             display: flex;
             @media (min-width:601px) {
                 margin-left: 55px;
+            }
+            @media (min-width:601px) and (max-width: 1281px) {
+                margin-left: 37px;
             }
             a {
                 display: flex;
@@ -225,10 +278,19 @@
                     font-size: 24px;
                     line-height: 35px;
                 }
+                @media (min-width:601px) and (max-width: 1281px) {
+                    width: 27px;
+                    height: 27px;
+                    font-size: 12px;
+                    line-height: 17px;
+                }
                 &:not(:last-child) {
                     margin-right: 13px;
                     @media (min-width:601px) {
                         margin-right: 15px;
+                    }
+                    @media (min-width:601px) and (max-width: 1281px) {
+                        margin-right: 10px;
                     }
                 }
             }
@@ -242,6 +304,9 @@
         @media (min-width:601px) {
             justify-content: space-between;
             margin: 30px 0 50px; 
+        }
+        @media (min-width:601px) and (max-width: 1281px) {
+            margin: 20px 0 33px;
         }
         &-basket {
             width: 100%;
@@ -261,6 +326,12 @@
             }
             @media (min-width:601px) and (max-width:900px) {
                 width: 100%;
+            }
+            @media (min-width:601px) and (max-width: 1281px) {
+                width: 175.5px;
+                height: 32.4px;
+                font-size: 12px;
+                line-height: 17px;
             }
         }
         &-buy {
@@ -282,6 +353,12 @@
             @media (min-width:1240px) {
                 margin-top: 0;
             }
+            @media (min-width:601px) and (max-width: 1281px) {
+                width: 108px;
+                height: 32.4px;
+                font-size: 12px;
+                line-height: 17px;
+            }
         }
     }
     &__char {
@@ -298,6 +375,11 @@
                 line-height: 35px;
                 margin-bottom: 30px;
             }
+            @media (min-width:601px) and (max-width: 1281px) {
+                font-size: 16px;
+                line-height: 23px;
+                margin-bottom: 20px;
+            }
         }
         p {
             width: 100%;
@@ -313,6 +395,10 @@
                 font-size: 18px;
                 line-height: 26px;
             }
+            @media (min-width:601px) and (max-width: 1281px) {
+                font-size: 12px;
+                line-height: 17px;
+            }
             span {
                 font-weight: 300;
             }
@@ -320,6 +406,9 @@
                 margin-bottom: 12px;
                 @media (min-width:601px) {
                     margin-bottom: 20px; 
+                }
+                @media (min-width:601px) and (max-width: 1281px) {
+                    margin-bottom: 13px;
                 }
             }
         }

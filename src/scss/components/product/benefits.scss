@@ -25,6 +25,12 @@
             padding: 75px 0 60px;
             margin-bottom: 60px;
         }
+        @media (min-width:601px) and (max-width: 1281px) {
+            width: 334.29px;
+            height: 240.43px;
+            margin-bottom: 40px;
+            padding: 0;
+        }
     }
     &__img {
         display: block;
@@ -36,6 +42,11 @@
         @media (min-width:601px) {
             width: 84px;
             height: 84px;
+        }
+        @media (min-width:601px) and (max-width: 1281px) {
+            width: 54px;
+            height: 54px;
+            margin-top: 48px;
         }
     }
     &__title {
@@ -52,6 +63,11 @@
             font-size: 20px;
             line-height: 29px;
         }
+        @media (min-width:601px) and (max-width: 1281px) {
+            font-size: 14px;
+            line-height: 20px;
+            margin: 22px 0 8px;
+        }
     }
     &__info {
         max-width: 137px;
@@ -65,6 +81,11 @@
             font-size: 18px;
             line-height: 26px;
             max-width: 459px;
+        }
+        @media (min-width:601px) and (max-width: 1281px) {
+            font-size: 12px;
+            line-height: 150%;
+            max-width: 280px;
         }
     }
 }

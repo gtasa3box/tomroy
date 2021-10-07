@@ -66,11 +66,11 @@ $('.slider-inst').slick({
       {
         breakpoint: 1300,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
-          arrows: false,
+          dots: false,
+          arrows: true,
         }
       },
       {

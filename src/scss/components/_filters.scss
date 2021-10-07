@@ -16,6 +16,11 @@
             line-height: 23px;
             padding: 14px 17px;
         }
+        @media (min-width:601px) and (max-width: 1281px) {
+            font-size: 11px;
+            line-height: 16px;
+            padding: 8px 11px;
+        }
         &:before {
             content: '';
             position: absolute;
@@ -45,6 +50,9 @@
         padding: 35px 0 50px;
         display: flex;
         flex-wrap: wrap; 
+        @media (min-width:601px) and (max-width: 1281px) {
+            padding: 22px 0 30px;
+        }
     }
     &__checkbox {
         label {
@@ -89,6 +97,10 @@
         color: #000000;
         margin-bottom: 15px;
         cursor: pointer;
+        @media (min-width:601px) and (max-width: 1281px) {
+            font-size: 9px;
+            line-height: 13px;
+        }
     }
     input[type=checkbox]+label {
         display: inline-flex;
@@ -108,6 +120,11 @@
             background-position: left 4px top 2px;
             background-size: 80% 80%;
             transition: 0.3s ease;
+            @media (min-width:601px) and (max-width: 1281px) {
+                width: 17.92px;
+                height: 17.92px;
+                margin-right: 13px;
+            }
         }
     }
     input[type=checkbox]:checked+label {

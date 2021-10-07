@@ -15,6 +15,9 @@
         @media (min-width: 601px) and (max-width:1360px) {
             padding: 50px 0 45px;
         }
+        @media (min-width:601px) and (max-width: 1281px) {
+            padding: 78px 0 77px;
+        }
         h4 {
             font-family: 'Evolventa',sans-serif;
             font-style: normal;
@@ -30,6 +33,10 @@
                 line-height: 32px;
                 margin-bottom: 16px;
             }
+            @media (min-width:601px) and (max-width: 1281px) {
+                font-size: 18px;
+                line-height: 24px;
+            }
         }
     }
     &__logo {
@@ -43,6 +50,10 @@
         @media (min-width: 601px) and (max-width:1360px) {
             width: 100%;
             margin-bottom: 50px;
+        }
+        @media (min-width:601px) and (max-width: 1281px) {
+            width: 183px;
+            height: 93px;
         }
     }
     &__nav {
@@ -70,6 +81,10 @@
             @media (min-width: 601px) {
                 font-size: 18px;
                 line-height: 26px;
+            }
+            @media (min-width:601px) and (max-width: 1281px) {
+                font-size: 12px;
+                line-height: 17px;
             }
             &:not(:last-child) {
                 margin-bottom: 11px;
@@ -99,6 +114,10 @@
             @media (min-width: 601px) {
                 font-size: 18px;
                 line-height: 26px;
+            }
+            @media (min-width:601px) and (max-width: 1281px) {
+                font-size: 14px;
+                line-height: 20px;
             }
             a {
                 color: black;
@@ -139,10 +158,18 @@
                 width: 45px;
                 background-size: 26px 26px;
             }
+            @media (min-width:601px) and (max-width: 1281px) {
+                width: 32px;
+                height: 33px;
+                background-size: 16px 16px;
+            }
             &:not(:last-child) {
                 margin-right: 10px;
                 @media (min-width: 601px) {
                     margin-right: 16px;
+                }
+                @media (min-width:601px) and (max-width: 1281px) {
+                    margin-right: 13px;
                 }
             }
         }
@@ -162,6 +189,13 @@
             font-size: 14px;
             line-height: 20px;
         }
+        @media (min-width:601px) and (max-width: 1281px) {
+            margin-top: 15px;
+            width: 179px;
+            height: 40px;
+            font-size: 14px;
+            line-height: 20px;
+        }
     }
     &__cop {
         border-top: 1px solid #000000;
@@ -169,6 +203,9 @@
         background-color: #F2F2F2;
         @media (min-width: 601px) {
             padding: 34px 0 39px;
+        }
+        @media (min-width:601px) and (max-width: 1281px) {
+            padding: 22px 0 25px;
         }
         h4 {
             font-family: 'Noto Sans JP',sans-serif;
@@ -183,6 +220,10 @@
             @media (min-width: 601px) {
                 font-size: 18px;
                 line-height: 26px;
+            }
+            @media (min-width:601px) and (max-width: 1281px) {
+                font-size: 16px;
+                line-height: 23px;
             }
         }
     }
