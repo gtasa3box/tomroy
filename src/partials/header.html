@@ -100,8 +100,8 @@
           <a href="tel:+78002014831" class="contact__number">+7 (800) 201-48-31</a>
           <p class="contact__delivery">Бесплатно по России</p>
         </div>
-        <div class="lc">
-          <a href="">Личный кабинет</a>
+        <div class="lc" data-target="#lc-inside">
+          <a>Личный кабинет</a>
         </div>
         <div class="btn-contain">
           <a href="" class="btn btn_white">Обратный звонок</a>
@@ -121,7 +121,7 @@
         <a>Забыли пароль?</a>
       </div>
       <input type="submit" class="btn" value="Войти">
-      <p class="account">Нет аккаунта? <a>Зарегистрируйтесь</a></p>
+      <p class="account">Нет аккаунта? <a data-fancybox data-src="#popup-reg">Зарегистрируйтесь</a></p>
     </form>
 </div>
 
@@ -139,7 +139,7 @@
           <input type="name" placeholder="Логин">
           <a class="capcha" style="background-image: url(img/popup/capcha.png);"></a>
           <input type="mail" placeholder="E-mail">
-          <input type="text" placeholder="Введите слово на картинке">
+          <input class="capcha-input" type="text" placeholder="Введите слово на картинке">
         </div>
         <div class="popup-reg__checkboxes">
           <input id="politicconf" type="checkbox">

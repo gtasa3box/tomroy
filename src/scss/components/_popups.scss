@@ -151,7 +151,9 @@
         padding: 60px 0;
         cursor: default !important;
         @media (max-width:601px) {
-            
+            width: 375px;
+            height: 1315px;
+            overflow-x: hidden;
         }
         &__wrapper {
             display: flex;
@@ -165,6 +167,10 @@
             position: absolute;
             top: 0;
             left: 0;
+            @media (max-width:601px) {
+                width: 375px;
+                height: 375px;
+            }
         }
         &__form {
             width: 620px;
@@ -172,6 +178,11 @@
             position: absolute;
             top: 0;
             right: 0;
+            @media (max-width:601px) {
+                top: 375px;
+                width: 375px;
+                height: 845px;
+            }
         }
         &__title {
             margin-top: 80px;
@@ -184,6 +195,13 @@
             letter-spacing: 0.06em;
             text-transform: uppercase;
             color: #000000;
+            @media (max-width:601px) {
+                font-size: 30px;
+                line-height: 40px;
+                margin-top: 33px;
+                margin-bottom: 33px;
+                margin-left: 20px;
+            }
         }
         &__inputs {
             display: flex;
@@ -191,6 +209,18 @@
             max-height: 520px;
             width: 520px;
             justify-content: space-between;
+            @media (max-width:601px) {
+                max-height: 576px;
+                width: 375px;
+                justify-content: center;
+                a {
+                    order: 1;
+                    margin-bottom: 35px;
+                }
+                .capcha-input {
+                    order: 2;
+                }
+            }
             input {
                 width: 240px;
                 height: 28px;
@@ -199,6 +229,10 @@
                 margin-bottom: 36px;
                 outline: none;
                 padding-left: 7px; 
+                @media (max-width:601px) {
+                    margin-bottom: 35px;
+                    width: 345px;
+                }
                 &::placeholder {
                     font-family: 'NotoSansJP',sans-serif;
                     font-style: normal;
@@ -215,6 +249,10 @@
                 display: block;
                 background-size: cover;
                 background-position:center;
+                @media (max-width:601px) {
+                    width: 345px;
+                    height: 56px;
+                }
 
             }
         }
@@ -266,18 +304,36 @@
         &__checkboxes {
             width: 60%;
             display: inline-block;
+            @media (max-width:601px) {
+                width: 100%;
+            }
             label {
                 margin-bottom: 20px;
+                @media (max-width:601px) {
+                    margin-left: 20px;
+                }
             }
         }
         &__submit {
             display: inline-block;
+            @media (max-width:601px) {
+                display: block;
+            }
+            @media (max-width:601px) {
+                width: 345px;
+                height: 47px;
+            }
             input {
                 border: none;
                 width: 130.96px;
                 height: 33.38px;
                 font-size: 12px;
                 line-height: 180%;
+                @media (max-width:601px) {
+                    width: 345px;
+                    height: 47px;
+                    margin-left: 20px;
+                }
             }
         }
     }
