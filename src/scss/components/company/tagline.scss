@@ -16,11 +16,19 @@
             padding: 80px 0 120px;
             font-weight: normal;
         }
+        @media (min-width:601px) and (max-width: 1281px) {
+            font-size: 18px;
+            line-height: 26px;
+            padding: 45px 0 80px;
+        }
         p {
             max-width: 303px;
             text-align: center;
             @media (min-width: 601px) {
                 max-width: initial;
+            }
+            @media (min-width:601px) and (max-width: 1281px) {
+
             }
         }
     }    

@@ -514,6 +514,10 @@
         width: 230px;
         height: 230px;
       }
+      @media (min-width:601px) and (max-width: 1281px) {
+        width: 147.86px;
+        height: 147.86px;
+      }
     }
   }
   .slick-slide {
@@ -531,6 +535,9 @@
       @media (min-width:601px) {
         width: 87px;
       }
+      @media (min-width:601px) and (max-width: 1281px) {
+        width: 56px;
+      }
       &:not(:last-child) {
         margin-right: 14px;
       }
@@ -538,6 +545,9 @@
         width: 61px;
         @media (min-width:601px) {
           width: 87px;
+        }
+        @media (min-width:601px) and (max-width: 1281px) {
+          width: 56px;
         }
         &:before {
           background-color: rgba(0, 0, 0, 0.7);
@@ -550,6 +560,9 @@
           opacity: 1;
           @media (min-width:601px) {
             width: 87px;
+          }
+          @media (min-width:601px) and (max-width: 1281px) {
+            width: 56px;
           }
         }
       }

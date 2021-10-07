@@ -5,6 +5,9 @@
         padding-bottom: 257px;
         padding-top: 130px;
     }
+    @media (min-width:601px) and (max-width: 1281px) {
+        padding: 160px 0 200px;
+    }
     position: relative;
     &__form {
         width: 100%;
@@ -13,6 +16,9 @@
         }
         @media (min-width:601px) and (max-width: 1160px) {
             width: 60%;
+        }
+        @media (min-width:601px) and (max-width: 1281px) {
+            width: 55%;
         }
     }
     &__img {
@@ -31,6 +37,11 @@
         @media (min-width:601px) and (max-width: 1160px) {
             width: 450px;
             height: 400px;
+        }
+        @media (min-width:601px) and (max-width: 1281px) {
+            width: 526.41px;
+            height: 526.41px;
+            top: 55%;
         }
         a {
             display: block;

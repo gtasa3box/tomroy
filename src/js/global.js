@@ -174,9 +174,18 @@ $('.slider-payment').slick({
       }
     },
     {
+      breakpoint: 1300,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 2,
+        arrows: true,
+        dots: true
+      }
+    },
+    {
       breakpoint: 940,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 2,
         arrows: false,
         dots: true

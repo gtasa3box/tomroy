@@ -39,6 +39,10 @@
             font-size: 48px;
             line-height: 64px;
         }
+        @media (min-width:601px) and (max-width: 1281px) {
+            font-size: 36px;
+            line-height: 48px;
+        }
     }
     p {
         font-family: 'NotoSansJP',sans-serif;
