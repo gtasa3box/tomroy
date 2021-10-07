@@ -25,7 +25,12 @@
     </div>
 
     <div class="header__user">
-      <a href="profile.html" class="user"></a>
+      <a class="user" data-target="#lc-inside"></a>
+    </div>
+
+    <div id="lc-inside" class="lc-inside">
+      <a data-fancybox data-src="#popup-inside" class="btn">Войти</a>
+      <a data-fancybox data-src="#popup-reg" class="btn btn_white">Зарегистрироваться</a>
     </div>
 
     <div class="header__contact contact">
@@ -105,3 +110,47 @@
     </nav>
   </div>
 </header>
+
+<div class="popup-inside" id="popup-inside">
+    <form action="" class="form-inside">
+      <input type="name" placeholder="Логин">
+      <input type="password" placeholder="Пароль">
+      <div class="check">
+        <input id="remember" type="checkbox">
+        <label for="remember">Запомнить меня</label>
+        <a>Забыли пароль?</a>
+      </div>
+      <input type="submit" class="btn" value="Войти">
+      <p class="account">Нет аккаунта? <a>Зарегистрируйтесь</a></p>
+    </form>
+</div>
+
+<div class="popup-reg" id="popup-reg">
+  <div class="popup-reg__wrapper">
+    <div class="popup-reg__img"></div>
+    <div class="popup-reg__form">
+      <h4 class="popup-reg__title">РЕГИСТРАЦИЯ</h4>
+      <form action="" class="form-reg">
+        <div class="popup-reg__inputs">
+          <input type="name" placeholder="Имя">
+          <input type="password" placeholder="Пароль">
+          <input type="text" placeholder="Фамилия">
+          <input type="password" placeholder="Подтверждения пароля">
+          <input type="name" placeholder="Логин">
+          <a class="capcha" style="background-image: url(img/popup/capcha.png);"></a>
+          <input type="mail" placeholder="E-mail">
+          <input type="text" placeholder="Введите слово на картинке">
+        </div>
+        <div class="popup-reg__checkboxes">
+          <input id="politicconf" type="checkbox">
+          <label for="politicconf">Я подтверждаю, что прочитал и принял условия и ложения Интернет-магазина, включая его политику конфиденциальности.</label>
+          <input id="updconf" type="checkbox">
+          <label for="updconf">Получать уведомления и рассылку</label>
+        </div>
+        <div class="popup-reg__submit">
+          <input class="btn" type="submit" value="Регистрация">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

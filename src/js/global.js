@@ -53,6 +53,11 @@ $('.promodrop').on('click', function(){
   $(this).toggleClass('active') 
   $($(this).data('target')).stop(true, false).slideToggle()  
 });
+//lc
+$('.user').on('click', function(){
+  $(this).toggleClass('active')
+  $($(this).data('target')).toggleClass('active') 
+});
 
 //inst-slider 
 $('.slider-inst').slick({
