@@ -130,15 +130,6 @@ $('.slider-pop-prod').slick({
   dots: true,
   responsive: [
     {
-      breakpoint: 1550,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 2,
-        arrows: false,
-        dots: true
-      }
-    },
-    {
       breakpoint: 1300,
       settings: {
         slidesToShow: 4,
@@ -148,12 +139,9 @@ $('.slider-pop-prod').slick({
       }
     },
     {
-      breakpoint: 800,
+      breakpoint: 1199,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
         arrows: false,
-        dots: false
       }
     },
     {

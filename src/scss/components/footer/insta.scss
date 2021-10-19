@@ -5,9 +5,12 @@
         padding-top: 150px;
         padding-bottom: 140px;
     }
-    @media (min-width:601px) and (max-width: 1281px) {
+    @media (min-width:1200px) and (max-width: 1601px) {
         padding-top: 120px;
         padding-bottom: 80px;
+    }
+    @media (min-width:601px) and (max-width: 1199px) {
+        padding: 100px 0;
     }
     &__content {
         margin-top: 15px;
@@ -16,13 +19,13 @@
         @media (min-width:601px) {
             margin-top: 0;
         }
-    }
-    &__title {
-
+        @media (min-width:601px) and (max-width: 1199px) {
+            justify-content: space-between;
+        }
     }
     &__slider {
         width: 100%;
-        @media (min-width:1000px) {
+        @media (min-width:601px) {
             width: 60%;
             position: relative;
             left: 20px;
@@ -33,9 +36,12 @@
     &__card {
         width: 100%;
         margin-top: 50px;
-        @media (min-width:1000px) {
+        @media (min-width:601px) {
             width: 40%;
             margin-top: 0;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            width: 177.96px;
         }
     }
     &__img {
@@ -51,9 +57,13 @@
             height: 390px;
             width: 445px;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             width: 264px;
             height: 301px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            width: 177.96px;
+            height: 202.9px;
         }
     }
 }

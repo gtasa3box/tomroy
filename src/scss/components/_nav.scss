@@ -26,11 +26,12 @@
         left: 50%;
         transform: translateX(-50%); 
     }
-    @media (min-width:601px) and (max-width:960px) {
-        max-width: 600px;
-    }
-    @media (min-width:601px) and (max-width: 1281px) {
+    @media (min-width:1200px) and (max-width: 1601px) {
         max-width: 746px;
+    }
+    @media (min-width:601px) and (max-width: 1199px) {
+        max-width: 598px;
+        bottom: 0;
     }
     &.active {
         right: 0;
@@ -62,7 +63,10 @@
         @media (min-width:601px) {
             display: inline-block;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
+            background-size: 40%;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
             background-size: 40%;
         }
         &.active {
@@ -81,15 +85,19 @@
             font-size: 20px;
             line-height: 29px;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             font-size: 16px;
             line-height: 23px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            font-size: 12px;
+            line-height: 17px;
         }
         &-child {
             font-size: 16px;
             line-height: 23px;
             padding: 3px 0;
-            @media (min-width:601px) and (max-width: 1281px) {
+            @media (min-width:1200px) and (max-width: 1601px) {
                 font-size: 12px;
                 line-height: 18px;
             }
@@ -177,7 +185,10 @@
             background-color: white;
             border-top: 1px solid #000000;
         }
-        @media (min-width:601px) and (max-width:960px) {
+        @media (min-width:601px) and (max-width: 1199px) {
+            top: 44px;
+            padding: 0 10px;
+            height: 43px;
             a {
                 font-size: 10px;
             }
@@ -192,8 +203,10 @@
                     width: 100%;
                     padding-top: 18px;
                 }
-                @media (min-width:601px) and (max-width:960px) {
-                    padding-top: 10px;
+                @media (min-width:601px) and (max-width: 1199px) {
+                    padding-top: 0;
+                    align-items: center;
+                    margin-top: 6px;
                 }
             }
        } 

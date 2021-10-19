@@ -21,9 +21,15 @@
             line-height: 48px;
             margin-bottom: 15px;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             font-size: 24px;
             line-height: 32px;
+            margin-bottom: 4px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            font-size: 16px;
+            line-height: 21px;
+            margin-bottom: 3px;
         }
     }
     h1 {
@@ -39,9 +45,13 @@
             font-size: 48px;
             line-height: 64px;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             font-size: 36px;
             line-height: 48px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            font-size: 24px;
+            line-height: 32px;
         }
     }
     p {
@@ -58,9 +68,13 @@
             font-size: 18px;
             line-height: 26px;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
-            font-size: 18px;
-            line-height: 26px;
+        @media (min-width:1200px) and (max-width: 1601px) {
+            font-size: 16px;
+            line-height: 23px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            font-size: 10px;
+            line-height: 14px;
         }
     }
     &__btn {
@@ -83,6 +97,18 @@
         }
         @media (min-width:800px) {
             margin-top: 0;
+        }
+        @media (min-width:1200px) and (max-width: 1601px) {
+            width: 195px;
+            height: 44px;
+            font-size: 16px;
+            line-height: 23px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            width: 131.44px;
+            height: 29.66px;
+            font-size: 11px;
+            line-height: 16px;
         }
     }
 }

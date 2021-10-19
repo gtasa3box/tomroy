@@ -7,6 +7,10 @@
         font-size: 12px;
         line-height: 17px;
     }
+    @media (min-width:601px) and (max-width: 1199px) {
+        font-size: 10px;
+        line-height: 14px;
+    }
     &__number {
         color: black;
     }
@@ -29,6 +33,11 @@
             width: 23px;
             height: 23px;
             left: -37px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            width: 18px;
+            height: 18px;
+            left: -27px;
         }
     }
 }

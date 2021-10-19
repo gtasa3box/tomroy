@@ -15,10 +15,15 @@
         height: 546px;
         padding: 42px 46px;
       }
-      @media (min-width:601px) and (max-width: 1281px) {
+      @media (min-width:1200px) and (max-width: 1601px) {
         width: 240px;
         height: 349.44px;
         padding: 18px 20px;
+      }
+      @media (min-width:601px) and (max-width: 1199px) {
+        width: 161.78px;
+        height: 235.55px;
+        padding: 14px 15px;
       }
     }
     &__discont {
@@ -38,11 +43,17 @@
         top: 16px;
         right: 32px;
       }
-      @media (min-width:601px) and (max-width: 1281px) {
+      @media (min-width:1200px) and (max-width: 1601px) {
         width: 51.84px;
         height: 30.08px;
         top:10px;
         right: 24px;
+      }
+      @media (min-width:601px) and (max-width: 1199px) {
+        width: 34.94px;
+        height: 20.28px;
+        right: 10px;
+        top: 6px;
       }
       &_red {
         font-family: 'NotoSansJP',sans-serif;
@@ -60,9 +71,13 @@
           font-size: 20px;
           line-height: 28px;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
           font-size: 12px;
           line-height: 17px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+          font-size: 8.08889px;
+          line-height: 12px;
         }
       }
       &_yellow {
@@ -81,9 +96,13 @@
           font-size: 20px;
           line-height: 29px;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
           font-size: 12px;
           line-height: 17px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+          font-size: 8.08889px;
+          line-height: 12px;
         }
       }
     }
@@ -91,17 +110,22 @@
       display: block;
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
       width: 118.23px;
       height: 118.23px;
       @media (min-width:601px) {
         width: 272px;
         height: 272px;
       }
-      @media (min-width:601px) and (max-width: 1281px) {
+      @media (min-width:1200px) and (max-width: 1601px) {
         width: 174.08px;
         height: 174.08px;
         background-size: contain;
-        background-repeat: no-repeat;
+      }
+      @media (min-width:601px) and (max-width: 1199px) {
+        background-size: contain;
+        width: 117.34px;
+        height: 117.34px;
       }
     }
     &__title {
@@ -118,10 +142,14 @@
         margin: 32px 0 42px;
         width: 60%;
       }
-      @media (min-width:601px) and (max-width: 1281px) {
+      @media (min-width:1200px) and (max-width: 1601px) {
         font-size: 10px;
         line-height: 150%;
         margin: 20px 0 30px;
+      }
+      @media (min-width:601px) and (max-width: 1199px) {
+        margin: 13px 0 18px;
+        font-size: 7px;
       }
     }
     &__price {
@@ -138,11 +166,16 @@
         font-size: 16px;
         margin: 32px 0 42px;
       }
-      @media (min-width:601px) and (max-width: 1281px)  {
+      @media (min-width:1200px) and (max-width: 1601px)  {
         margin: 30px 0 30px;
         font-size: 10px;
         line-height: 164.8%;
         text-align: right;
+      }
+      @media (min-width:601px) and (max-width: 1199px) {
+        margin: 22px 0 25px;
+        text-align: right;
+        font-size: 7px;
       }
     }
     &__basket {
@@ -164,9 +197,13 @@
         align-items: center;
         justify-content: center;
       }
-      @media (min-width:601px) and (max-width: 1281px) {
+      @media (min-width:1200px) and (max-width: 1601px) {
         font-size: 10px;
         line-height: 14px;
+      }
+      @media (min-width:601px) and (max-width: 1199px) {
+        font-size: 7px;
+        line-height: 10px;
       }
       &:before {
         content: '';
@@ -183,6 +220,11 @@
         @media (min-width:601px) {
           left: 6px;
           top: 50%;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+          width: 10.35px;
+          height: 10.35px;
+          left: 1px;
         }
       }
     }
@@ -204,11 +246,17 @@
         font-size: 16px;
         line-height: 23px;
       }
-      @media (min-width:601px) and (max-width: 1281px) {
+      @media (min-width:1200px) and (max-width: 1601px) {
         width: 86.4px;
         height: 26.24px;
         font-size: 10px;
         line-height: 14px;
+      }
+      @media (min-width:601px) and (max-width: 1199px) {
+        width: 58.24px;
+        height: 17.69px;
+        font-size: 7px;
+        line-height: 10px;
       }
     }
 }

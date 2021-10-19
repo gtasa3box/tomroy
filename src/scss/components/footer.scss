@@ -12,11 +12,11 @@
             justify-content: space-between;
             padding: 127px 0 111px;
         }
-        @media (min-width: 601px) and (max-width:1360px) {
-            padding: 50px 0 45px;
-        }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             padding: 78px 0 77px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            padding: 47px 0 55px;
         }
         h4 {
             font-family: 'Evolventa',sans-serif;
@@ -33,9 +33,14 @@
                 line-height: 32px;
                 margin-bottom: 16px;
             }
-            @media (min-width:601px) and (max-width: 1281px) {
+            @media (min-width:1200px) and (max-width: 1601px) {
                 font-size: 18px;
                 line-height: 24px;
+            }
+            @media (min-width:601px) and (max-width: 1199px) {
+                margin-top: 0;
+                font-size: 13px;
+                line-height: 17px;
             }
         }
     }
@@ -47,13 +52,14 @@
             width: 329px;
             height: 167px;
         }
-        @media (min-width: 601px) and (max-width:1360px) {
-            width: 100%;
-            margin-bottom: 50px;
-        }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             width: 183px;
             height: 93px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            width: 123px;
+            height: 63px;
+            margin-top: 0;
         }
     }
     &__nav {
@@ -66,8 +72,8 @@
             margin:0;
             max-width: 240px;
         }
-        @media (min-width: 601px) and (max-width:921px) {
-            margin-bottom: 30px;
+        @media (min-width:601px) and (max-width: 1199px) {
+            max-width: 110px;
         }
         a {
             font-family: 'NotoSansJP',sans-serif;
@@ -82,14 +88,21 @@
                 font-size: 18px;
                 line-height: 26px;
             }
-            @media (min-width:601px) and (max-width: 1281px) {
+            @media (min-width:1200px) and (max-width: 1601px) {
                 font-size: 12px;
                 line-height: 17px;
+            }
+            @media (min-width:601px) and (max-width: 1199px) {
+                font-size: 9px;
+                line-height: 13px;
             }
             &:not(:last-child) {
                 margin-bottom: 11px;
                 @media (min-width: 601px) {
                     margin-bottom: 13px;
+                }
+                @media (min-width:601px) and (max-width: 1199px) {
+                    margin-bottom: 11px;
                 }
             }
             &:hover {
@@ -109,15 +122,18 @@
             font-size: 11px;
             line-height: 16px;
             letter-spacing: 0.025em;
-            text-transform: uppercase;
             color: #000000;
             @media (min-width: 601px) {
                 font-size: 18px;
                 line-height: 26px;
             }
-            @media (min-width:601px) and (max-width: 1281px) {
+            @media (min-width:1200px) and (max-width: 1601px) {
                 font-size: 14px;
                 line-height: 20px;
+            }
+            @media (min-width:601px) and (max-width: 1199px) {
+                font-size: 10px;
+                line-height: 14px;
             }
             a {
                 color: black;
@@ -132,6 +148,9 @@
     }
     &__mail {
         margin-top: 10px;
+        @media (min-width:601px) and (max-width: 1199px) {
+            margin-top: 7px;
+        }
         a {
             text-transform: lowercase;
             text-decoration: underline;
@@ -158,18 +177,26 @@
                 width: 45px;
                 background-size: 26px 26px;
             }
-            @media (min-width:601px) and (max-width: 1281px) {
+            @media (min-width:1200px) and (max-width: 1601px) {
                 width: 32px;
                 height: 33px;
                 background-size: 16px 16px;
+            }
+            @media (min-width:601px) and (max-width: 1199px) {
+                width: 21.57px;
+                height: 22.24px;
+                background-size: 12px 12px;
             }
             &:not(:last-child) {
                 margin-right: 10px;
                 @media (min-width: 601px) {
                     margin-right: 16px;
                 }
-                @media (min-width:601px) and (max-width: 1281px) {
+                @media (min-width:1200px) and (max-width: 1601px) {
                     margin-right: 13px;
+                }
+                @media (min-width:601px) and (max-width: 1199px) {
+                    margin-right: 8px; 
                 }
             }
         }
@@ -189,12 +216,19 @@
             font-size: 14px;
             line-height: 20px;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             margin-top: 15px;
             width: 179px;
             height: 40px;
             font-size: 14px;
             line-height: 20px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            width: 120.66px;
+            height: 26.96px;
+            margin-top: 10px;
+            font-size: 10px;
+            line-height: 14px;
         }
     }
     &__cop {
@@ -204,8 +238,11 @@
         @media (min-width: 601px) {
             padding: 34px 0 39px;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             padding: 22px 0 25px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            padding: 15px 0 22px;
         }
         h4 {
             font-family: 'Noto Sans JP',sans-serif;
@@ -221,9 +258,13 @@
                 font-size: 18px;
                 line-height: 26px;
             }
-            @media (min-width:601px) and (max-width: 1281px) {
+            @media (min-width:1200px) and (max-width: 1601px) {
                 font-size: 16px;
                 line-height: 23px;
+            }
+            @media (min-width:601px) and (max-width: 1199px) {
+                font-size: 12px;
+                line-height: 17px;
             }
         }
     }

@@ -9,8 +9,11 @@
             padding: 45px 0;
             align-items: center;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             padding: 18px 0;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            padding: 20px 0;
         }
     }
     h3 {
@@ -28,9 +31,13 @@
             line-height: 32px;
             width: initial;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             font-size: 18px;
             line-height: 24px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            font-size: 14px;
+            line-height: 19px;
         }
     }
     form {
@@ -39,9 +46,6 @@
         flex-wrap: wrap;
         @media (min-width: 601px) {
             width: initial;
-        }
-        @media (min-width: 601px) and (max-width: 1213px) {
-            margin-top: 10px;
         }
     }
     input[type=email] {
@@ -57,17 +61,25 @@
             color: white;
             font-size: 12px;
             line-height: 17px;
+            @media (min-width:601px) and (max-width: 1199px) {
+                font-size: 10px;
+                line-height: 14px;
+            }
         }
         @media (min-width: 601px) {
             width: initial;
             width: 375px;
             margin-right: 60px;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             width: 242px;
             margin: 0;
-            margin-right: 38px;
-            
+            margin-right: 38px;    
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            width: 161.56px;
+            margin-right: 25px;
+            padding: 6px;
         }
         
     }
@@ -91,11 +103,19 @@
             width: 290px;
             height: 49px;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             width: 240px;
             height: 44px;
             font-size: 16px;
             line-height: 23px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            width: 160.22px;
+            height: 29.37px;
+            font-size: 12px;
+            line-height: 17px;
+            padding: 0;
+            margin-top: 5px;
         }
     }
 }
