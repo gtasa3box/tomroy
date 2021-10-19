@@ -3,8 +3,11 @@
     @media (min-width:601px) {
         padding-bottom: 120px;
     }
-    @media (min-width:601px) and (max-width: 1281px) {
+    @media (min-width:1200px) and (max-width: 1601px) {
         padding-bottom: 80px;
+    }
+    @media (min-width:601px) and (max-width: 1199px) {
+        padding-bottom: 30px;
     }
     &__title {
     }
@@ -15,8 +18,11 @@
             justify-content: space-between;
             margin-top: 70px;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             margin-top: 50px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            margin-top: 20px;
         }
     }
     &__contain {
@@ -30,9 +36,13 @@
             padding: 46px 20px 45px 50px;
             margin-bottom: 60px;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             margin-bottom: 40px;
             padding: 30px 33px 50px 33px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            padding: 20px 22px 30px;
+            margin-bottom: 26px;
         }
     }
     &__msk {
@@ -74,9 +84,13 @@
             font-size: 24px;
             line-height: 35px;
         }
-        @media (min-width:601px) and (max-width: 1281px)  {
+        @media (min-width:1200px) and (max-width: 1601px)  {
             font-size: 16px;
             line-height: 23px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            font-size: 12px;
+            line-height: 17px;
         }
     }
     &__lowtitle {
@@ -92,10 +106,15 @@
             line-height: 26px;
             margin: 60px 0 20px;
         }
-        @media (min-width:601px) and (max-width: 1281px)  {
+        @media (min-width:1200px) and (max-width: 1601px)  {
             margin: 40px 0 11px;
             font-size: 12px;
             line-height: 17px;
+        }
+        @media (min-width:601px) and (max-width: 1199px)  {
+            margin: 26px 0 12px;
+            font-size: 10px;
+            line-height: 14px;
         }
     }
     &__adres {
@@ -109,10 +128,15 @@
             font-size: 18px;
             line-height: 180%;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             font-size: 12px;
             line-height: 180%;
             margin-top: 20px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            font-size: 10px;
+            line-height: 180%;
+            margin-top: 13px;
         }
     }
     &__number {
@@ -127,10 +151,14 @@
             font-size: 18px; 
             margin-left: 51px;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             font-size: 12px;
             line-height: 180%;
             margin-left: 33px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            font-size: 10px;
+            margin-left: 22px;
         }
         &::before {
             content: '';
@@ -151,11 +179,18 @@
                 left: -51px;
                 background-size: 22px 22px;
             }
-            @media (min-width:601px) and (max-width: 1281px) {
+            @media (min-width:1200px) and (max-width: 1601px) {
                 width: 25px;
                 height: 25px;
                 left: -33px;
                 background-size: 12px 12px;
+            }
+            @media (min-width:601px) and (max-width: 1199px) {
+                width: 16.47px;
+                height: 16.47px;
+                background-size: 9px 9px;
+                left: -22px;
+                top: 0;
             }
         }
     }
@@ -171,10 +206,14 @@
             font-size: 18px; 
             margin-left: 51px;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             font-size: 12px;
             line-height: 180%;
             margin-left: 33px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            font-size: 10px;
+            margin-left: 22px;
         }
         &::before {
             content: '';
@@ -195,11 +234,18 @@
                 left: -51px;
                 background-size: 22px 22px;
             }
-            @media (min-width:601px) and (max-width: 1281px) {
+            @media (min-width:1200px) and (max-width: 1601px) {
                 width: 25px;
                 height: 25px;
                 left: -33px;
                 background-size: 12px 12px;
+            }
+            @media (min-width:601px) and (max-width: 1199px) {
+                width: 16.47px;
+                height: 16.47px;
+                background-size: 9px 9px;
+                left: -22px;
+                top: 0;
             }
         }
     }
@@ -209,8 +255,11 @@
         @media (min-width:601px) {
             margin-top: 60px;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             margin-top: 40px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            margin-top: 15px;
         }
         iframe {
             width: 100%;
@@ -218,8 +267,11 @@
             @media (min-width:601px) {
                 height: 900px;
             }
-            @media (min-width:601px) and (max-width: 1281px) {
+            @media (min-width:1200px) and (max-width: 1601px) {
                 height: 600px;
+            }
+            @media (min-width:601px) and (max-width: 1199px) {
+                height: 350px;
             }
         }
         &-btn {
@@ -247,13 +299,21 @@
                 font-size: 18px;
                 line-height: 26px;
             }
-            @media (min-width:601px) and (max-width: 1281px) {
+            @media (min-width:1200px) and (max-width: 1601px) {
                 width: 258.67px;
                 height: 40px;
                 font-size: 12px;
                 line-height: 17px;
                 top: 56px;
                 left: 80px;
+            }
+            @media (min-width:601px) and (max-width: 1199px) {
+                width: 216px;
+                height: 33.4px;
+                font-size: 10.0206px;
+                line-height: 14px;
+                top: 35px;
+                left: 20px;
             }
         }
     }

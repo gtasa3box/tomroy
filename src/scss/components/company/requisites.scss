@@ -11,8 +11,11 @@
             justify-content: space-between;
             padding: 67px 0 90px;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             padding: 45px 0 65px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            padding: 35px 0 56px;
         }
     }
     &__title {
@@ -27,9 +30,13 @@
             font-size: 24px;
             line-height: 35px;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             font-size: 16px;
             line-height: 23px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            font-size: 14px;
+            line-height: 20px;
         }
     }
     &__ooo {
@@ -46,35 +53,39 @@
             line-height: 26px;
             margin: 30px 0;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             font-size: 12px;
             line-height: 17px;
             margin: 20px 0;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            font-size: 10px;
+            line-height: 14px;
+            margin: 15px 0 20px;
         }
     }
     &__left {
         @media (min-width: 601px) {
             width: 48%;
         }
-        @media (min-width: 601px) and (max-width:1000px) {
-            width: 100%;
-        }
+        
     }
     &__right {
         @media (min-width: 601px) {
             width: 48%;
         }
-        @media (min-width: 601px) and (max-width:1000px) {
-            width: 100%;
-        }
+        
     }
     &__elem {
         display: flex;
         justify-content: space-between;
         width: 100%;
         margin-bottom: 28px;
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             margin-bottom: 20px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            margin-bottom: 13px;
         }
         p {
             width: 48%;
@@ -87,13 +98,21 @@
                 font-size: 18px;
                 line-height: 26px;
             }
-            @media (min-width:601px) and (max-width: 1281px) {
+            @media (min-width:1200px) and (max-width: 1601px) {
                 font-size: 12px;
                 line-height: 17px;
+            }
+            @media (min-width:601px) and (max-width: 1199px) {
+                font-size: 10px;
+                line-height: 14px;
+                width: 34%;
             }
             &:last-child {
                 font-weight: 600;
                 text-transform: uppercase; 
+                @media (min-width:601px) and (max-width: 1199px) {
+                    width: 55%;
+                }
             }
         }
     }
