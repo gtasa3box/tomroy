@@ -12,9 +12,13 @@
             font-size: 48px;
             line-height: 64px;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             font-size: 36px;
             line-height: 48px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            font-size: 24px;
+            line-height: 32px;
         }
     }
     &__content {
@@ -25,8 +29,12 @@
         @media (min-width: 601px) {
             margin-top: 86px;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             margin-top: 70px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            margin-top: 45px;
+            position: relative;
         }
     }
     &__filters {
@@ -37,14 +45,17 @@
         background-color: white;
         top: 290px;
         left: 20px;
-        @media (min-width: 601px) {
+        @media (min-width: 1199px) {
             width: 22%;
             position: relative;
-            display: block;
+            display: block !important;
             top: 0;
+            left: 0;
         }
-        @media (min-width: 601px) and (max-width:1100px) {
+        @media (min-width: 601px) and (max-width:1199px) {
+            top: 40px;
             width: 30%;
+            left: 0;
         }
     }
     &__items {
@@ -56,8 +67,8 @@
         @media (min-width: 601px) {
             width: 74%;
         }
-        @media (min-width: 601px) and (max-width:1100px) {
-            width: 65%;
+        @media (min-width: 601px) and (max-width:1199px) {
+            width: 100%;
         }
     }
     &__filtersitems {
@@ -68,6 +79,12 @@
         position: relative;
         @media (min-width: 601px) {
             margin-bottom: 50px;
+        }
+        @media (min-width:1200px) and (max-width: 1601px) {
+            margin-bottom: 45px;
+        }
+        @media (min-width: 601px) and (max-width:1199px) {
+            margin-bottom: 45px;
         }
         h4 {
             width: 236px;
@@ -109,6 +126,14 @@
         width: 50%;
         display: flex;
         justify-content: flex-start;
+        @media (min-width: 200px) and (max-width:600px) {
+            position: relative;
+            bottom: -2px;
+            select {
+                padding: 0 7px;
+                font-size: 12px;
+            }
+        }
         @media (min-width: 601px) {
             justify-content: flex-end;
             width: 100%;
@@ -118,8 +143,11 @@
     &__filters-mob {
         width: 50%;
         position: relative;
-        @media (min-width: 601px) {
+        @media (min-width: 1199px) {
             display: none;
+        }
+        @media (min-width: 601px) and (max-width:1199px) {
+
         }
         h4 {
             width: 95%;
@@ -130,6 +158,12 @@
         @media (min-width: 601px) {
             margin-bottom: 60px;
         }
+        @media (min-width:1200px) and (max-width: 1601px) {
+            margin-bottom: 40px;
+        }
+        @media (min-width: 601px) and (max-width:1199px) {
+            margin-bottom: 30px;
+        }
     }
     &__page-nav {
         width: 100%;
@@ -138,6 +172,12 @@
         margin-bottom: 75px;
         @media (min-width: 601px) {
             margin-bottom: 150px;
+        }
+        @media (min-width:1200px) and (max-width: 1601px) {
+            margin-bottom: 100px; 
+        }
+        @media (min-width: 601px) and (max-width:1199px) {
+            margin-bottom: 80px;
         }
         a {
             height: 43px;
@@ -160,10 +200,28 @@
                 font-size: 18px;
                 line-height: 26px;
             }
+            @media (min-width:1200px) and (max-width: 1601px) {
+                width: 30px;
+                height: 30px;
+                font-size: 10px;
+                line-height: 14px;
+            }
+            @media (min-width: 601px) and (max-width:1199px) {
+                width: 31.75px;
+                height: 31.75px;
+                font-size: 11px;
+                line-height: 16px;
+            }
             &:not(:last-child) {
                 margin-right: 17px;
                 @media (min-width: 601px) {
                     margin-right: 20px;
+                }
+                @media (min-width:1200px) and (max-width: 1601px) {
+                    margin-right: 12px;
+                }
+                @media (min-width: 601px) and (max-width:1199px) {
+                    margin-right: 13px;
                 }
             }
             &.active {
