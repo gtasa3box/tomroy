@@ -18,10 +18,13 @@
                 text-transform: uppercase;
                 max-width: 1241px;
             }
-            @media (min-width:601px) and (max-width: 1281px) {
+            @media (min-width:1200px) and (max-width: 1601px) {
                 font-size: 14px;
                 line-height: 180%;
                 max-width: 924px;
+            }
+            @media (min-width:601px) and (max-width: 1199px) {
+                font-size: 10px;
             }
         }
     }
@@ -31,12 +34,11 @@
             margin-top: 60px;
             width: 48%;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             margin-top: 40px;
         }
-        @media (min-width:601px) and (max-width:930px) {
-            width: 100%;
-            margin-top: 40px;
+        @media (min-width:601px) and (max-width: 1199px) {
+            margin-top: 27px;
         }
     }
     &__droptitle {
@@ -55,9 +57,13 @@
             font-size: 18px;
             padding: 24px 30px;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             font-size: 12px;
             padding: 15px 19px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            font-size: 8px;
+            padding: 10px 13px;
         }
         &:before {
             content: '';
@@ -76,8 +82,13 @@
                 width: 18px;
                 height: 9px;
             }
-            @media (min-width:601px) and (max-width: 1281px) {
+            @media (min-width:1200px) and (max-width: 1601px) {
                 right: 10px;
+            }
+            @media (min-width:601px) and (max-width: 1199px) {
+                width: 8px;
+                height: 4px;
+                right: 14px;
             }
         }
         &.active {
@@ -100,9 +111,13 @@
             font-size: 16px;
             padding: 30px;
         }
-        @media (min-width:601px) and (max-width: 1281px) {
+        @media (min-width:1200px) and (max-width: 1601px) {
             font-size: 12px;
             padding: 20px 19px;
+        }
+        @media (min-width:601px) and (max-width: 1199px) {
+            font-size: 8px;
+            padding: 13px;
         }
     }
 }
