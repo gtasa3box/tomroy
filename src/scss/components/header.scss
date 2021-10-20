@@ -235,6 +235,7 @@
             left: 50%;
             transform: translateX(-50%);
             padding: 25px 10px;
+            top:380px;
         }
         .btn {
             width: 108px;
@@ -242,9 +243,6 @@
             margin-right: 25px;
             font-size: 14px;
             line-height: 20px;
-            @media (min-width:1200px) and (max-width: 1601px) {
-                
-            }
         }
         .btn_white {
             width: 211px;
