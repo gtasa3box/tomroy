@@ -75,6 +75,7 @@
                 background-position: center;
                 width: 40px;
                 height: 40px;
+                cursor: pointer;
                 @media (min-width:1200px) and (max-width: 1601px) {
                     width: 31px;
                     height: 31px;
@@ -157,6 +158,13 @@
             letter-spacing: 0.04em;
             outline: none;
             color: rgba(0, 0, 0, 0.7);
+            &::placeholder {
+                font-family: 'NotoSansJP',sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 17px;
+            }
             @media (min-width:601px) {
                 margin-top: 0;
                 height: 100%;
